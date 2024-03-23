@@ -8,7 +8,7 @@ import androidx.annotation.ColorRes
 import androidx.annotation.StyleRes
 import androidx.fragment.app.Fragment
 import com.google.android.material.color.DynamicColors
-import com.tsng.hidemyapplist.R
+import com.google.android.hmal.R
 import icu.nullptr.hidemyapplist.service.PrefManager
 import rikka.core.util.ResourceUtils
 

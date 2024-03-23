@@ -2,7 +2,7 @@ package icu.nullptr.hidemyapplist.ui.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.tsng.hidemyapplist.R
+import com.google.android.hmal.R
 import icu.nullptr.hidemyapplist.service.ConfigManager
 import icu.nullptr.hidemyapplist.ui.view.ListItemView
 import java.text.Collator

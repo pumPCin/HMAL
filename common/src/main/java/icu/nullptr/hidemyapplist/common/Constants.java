@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class Constants {
 
-    public static final String APP_PACKAGE_NAME = "com.tsng.hidemyapplist";
+    public static final String APP_PACKAGE_NAME = "com.google.android.hmal";
 
     public static final String PROVIDER_AUTHORITY = APP_PACKAGE_NAME + ".ServiceProvider";
     public static final String GMS_PACKAGE_NAME = "com.google.android.gms";

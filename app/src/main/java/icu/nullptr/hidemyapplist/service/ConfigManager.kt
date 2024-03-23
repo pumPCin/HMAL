@@ -2,7 +2,7 @@ package icu.nullptr.hidemyapplist.service
 
 import android.os.Build
 import android.util.Log
-import com.tsng.hidemyapplist.R
+import com.google.android.hmal.R
 import icu.nullptr.hidemyapplist.common.BuildConfig
 import icu.nullptr.hidemyapplist.common.JsonConfig
 import icu.nullptr.hidemyapplist.hmaApp

@@ -15,8 +15,8 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.tsng.hidemyapplist.R
-import com.tsng.hidemyapplist.databinding.FragmentSettingsBinding
+import com.google.android.hmal.R
+import com.google.android.hmal.databinding.FragmentSettingsBinding
 import icu.nullptr.hidemyapplist.common.CommonUtils
 import icu.nullptr.hidemyapplist.common.Constants
 import icu.nullptr.hidemyapplist.hmaApp

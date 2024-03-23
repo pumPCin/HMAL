@@ -3,7 +3,7 @@ package icu.nullptr.hidemyapplist
 import android.annotation.SuppressLint
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
-import com.tsng.hidemyapplist.R
+import com.google.android.hmal.R
 import icu.nullptr.hidemyapplist.service.ConfigManager
 import icu.nullptr.hidemyapplist.service.PrefManager
 import icu.nullptr.hidemyapplist.ui.receiver.AppChangeReceiver

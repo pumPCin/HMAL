@@ -60,7 +60,7 @@ object PrefManager {
         get() = pref.getBoolean(PREF_HIDE_ICON, false)
         set(value) {
             pref.edit().putBoolean(PREF_HIDE_ICON, value).apply()
-            val component = ComponentName(hmaApp, "com.tsng.hidemyapplist.MainActivityLauncher")
+            val component = ComponentName(hmaApp, "com.google.android.hmal.MainActivityLauncher")
             val status =
                 if (value) PackageManager.COMPONENT_ENABLED_STATE_DISABLED
                 else PackageManager.COMPONENT_ENABLED_STATE_ENABLED

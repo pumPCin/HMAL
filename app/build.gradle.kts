@@ -17,7 +17,7 @@ if (officialBuild) {
 }
 
 android {
-    namespace = "com.tsng.hidemyapplist"
+    namespace = "com.google.android.hmal"
 
     buildFeatures {
         buildConfig = true

@@ -13,6 +13,6 @@
 -keep class icu.nullptr.hidemyapplist.data.UpdateData$* { *; }
 
 -keep,allowoptimization class * extends androidx.preference.PreferenceFragmentCompat
--keepclassmembers class com.tsng.hidemyapplist.databinding.**  {
+-keepclassmembers class com.google.android.hmal.databinding.**  {
     public <methods>;
 }

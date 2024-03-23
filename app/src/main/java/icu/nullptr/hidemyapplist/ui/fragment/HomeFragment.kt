@@ -15,9 +15,9 @@ import androidx.navigation.fragment.FragmentNavigatorExtras
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.transition.MaterialElevationScale
-import com.tsng.hidemyapplist.BuildConfig
-import com.tsng.hidemyapplist.R
-import com.tsng.hidemyapplist.databinding.FragmentHomeBinding
+import com.google.android.hmal.BuildConfig
+import com.google.android.hmal.R
+import com.google.android.hmal.databinding.FragmentHomeBinding
 import icu.nullptr.hidemyapplist.data.fetchLatestUpdate
 import icu.nullptr.hidemyapplist.hmaApp
 import icu.nullptr.hidemyapplist.service.ConfigManager

@@ -11,8 +11,8 @@ import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.transition.MaterialContainerTransform
-import com.tsng.hidemyapplist.R
-import com.tsng.hidemyapplist.databinding.FragmentTemplateSettingsBinding
+import com.google.android.hmal.R
+import com.google.android.hmal.databinding.FragmentTemplateSettingsBinding
 import icu.nullptr.hidemyapplist.service.ConfigManager
 import icu.nullptr.hidemyapplist.ui.util.navController
 import icu.nullptr.hidemyapplist.ui.util.setupToolbar

@@ -7,8 +7,8 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.google.android.material.color.DynamicColors
-import com.tsng.hidemyapplist.R
-import com.tsng.hidemyapplist.databinding.ActivityMainBinding
+import com.google.android.hmal.R
+import com.google.android.hmal.databinding.ActivityMainBinding
 import icu.nullptr.hidemyapplist.ui.util.ThemeUtils
 import rikka.material.app.MaterialActivity
 
