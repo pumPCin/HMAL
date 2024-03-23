@@ -9,7 +9,7 @@
         android:id="@+id/level"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:fontFamily="monospace"
+        android:fontFamily="serif"
         android:gravity="center"
         android:paddingHorizontal="4dp"
         android:textAppearance="?textAppearanceTitleSmall"
@@ -28,7 +28,7 @@
             android:id="@+id/tag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
+            android:fontFamily="serif"
             android:textAppearance="?textAppearanceTitleSmall"
             tools:text="HMAL-B" />
 
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
-            android:fontFamily="monospace"
+            android:fontFamily="serif"
             android:textAppearance="?textAppearanceBodySmall"
             tools:text="HMAL-S initialized" />
 

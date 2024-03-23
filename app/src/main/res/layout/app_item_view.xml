@@ -42,7 +42,7 @@
             android:id="@+id/package_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
+            android:fontFamily="serif"
             tools:text="com.example.app" />
     </LinearLayout>
 
