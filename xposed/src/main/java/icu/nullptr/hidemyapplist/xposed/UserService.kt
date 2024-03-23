@@ -23,7 +23,6 @@ object UserService {
             try {
                 val provider = ActivityManagerApis.getContentProviderExternal(Constants.PROVIDER_AUTHORITY, 0, null, null)
                 if (provider == null) {
-                    logE(TAG, "Failed to get provider")
                     return
                 }
                 val extras = Bundle()
@@ -39,27 +38,20 @@ object UserService {
                     provider.call("android", "", null, extras)
                 }
                 if (reply == null) {
-                    logE(TAG, "Failed to send binder to app")
                     return
                 }
-                logI(TAG, "Send binder to app")
             } catch (e: Throwable) {
-                logE(TAG, "onUidActive", e)
             }
         }
     }
 
     fun register(pms: IPackageManager) {
-        logI(TAG, "Initialize HMAL-S - Version ${BuildConfig.SERVICE_VERSION}")
         val service = HMAService(pms)
         appUid = Utils.getPackageUidCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
         val appPackage = Utils.getPackageInfoCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
         if (!Utils.verifyAppSignature(appPackage.applicationInfo.sourceDir)) {
-            logE(TAG, "Fatal: App signature mismatch")
             return
         }
-        logD(TAG, "Client uid: $appUid")
-        logI(TAG, "Register observer")
 
         waitSystemService("activity")
         ActivityManagerApis.registerUidObserver(

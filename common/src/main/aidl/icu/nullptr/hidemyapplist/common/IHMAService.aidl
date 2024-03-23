@@ -9,8 +9,4 @@ interface IHMAService {
     int getServiceVersion() = 2;
 
     int getFilterCount() = 3;
-
-    String getLogs() = 4;
-
-    void clearLogs() = 5;
 }

@@ -20,7 +20,6 @@ class PmsHookTarget30(private val service: HMAService) : IFrameworkHook {
     private var lastFilteredApp: AtomicReference<String?> = AtomicReference(null)
 
     override fun load() {
-        logI(TAG, "Load hook")
         hook = findMethod("com.android.server.pm.AppsFilter") {
             name == "shouldFilterApplication"
         }.hookBefore { param ->
@@ -36,13 +35,10 @@ class PmsHookTarget30(private val service: HMAService) : IFrameworkHook {
                         param.result = true
                         service.filterCount++
                         val last = lastFilteredApp.getAndSet(caller)
-                        if (last != caller) logI(TAG, "@shouldFilterApplication: query from $caller")
-                        logD(TAG, "@shouldFilterApplication caller: $callingUid $caller, target: $targetApp")
                         return@hookBefore
                     }
                 }
             }.onFailure {
-                logE(TAG, "Fatal error occurred, disable hooks", it)
                 unload()
             }
         }

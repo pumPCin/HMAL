@@ -5,10 +5,6 @@
         android:icon="@drawable/ic_home_checkable"
         android:title="@string/title_home" />
     <item
-        android:id="@+id/nav_logs"
-        android:icon="@drawable/ic_logs_checkable"
-        android:title="@string/title_logs" />
-    <item
         android:id="@+id/nav_settings"
         android:icon="@drawable/ic_settings_checkable"
         android:title="@string/title_settings" />

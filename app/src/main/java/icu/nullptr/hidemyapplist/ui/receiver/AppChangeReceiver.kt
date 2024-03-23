@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.util.Log
 import icu.nullptr.hidemyapplist.util.PackageHelper
 
 class AppChangeReceiver : BroadcastReceiver() {
@@ -29,7 +28,6 @@ class AppChangeReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action in actions) {
-            Log.i(TAG, "Received intent: $intent")
             PackageHelper.invalidateCache()
         }
     }

@@ -1,7 +1,6 @@
 package icu.nullptr.hidemyapplist.service
 
 import android.os.Build
-import android.util.Log
 import com.google.android.hmal.R
 import icu.nullptr.hidemyapplist.common.BuildConfig
 import icu.nullptr.hidemyapplist.common.JsonConfig
@@ -38,20 +37,6 @@ object ConfigManager {
         configFile.writeText(text)
         ServiceClient.syncConfig(text)
     }
-
-    var detailLog: Boolean
-        get() = config.detailLog
-        set(value) {
-            config.detailLog = value
-            saveConfig()
-        }
-
-    var maxLogSize: Int
-        get() = config.maxLogSize
-        set(value) {
-            config.maxLogSize = value
-            saveConfig()
-        }
 
     var forceMountData: Boolean
         get() =
@@ -108,13 +93,11 @@ object ConfigManager {
     }
 
     fun updateTemplate(name: String, template: JsonConfig.Template) {
-        Log.d(TAG, "updateTemplate: $name list = ${template.appList}")
         config.templates[name] = template
         saveConfig()
     }
 
     fun updateTemplateAppliedApps(name: String, appliedList: List<String>) {
-        Log.d(TAG, "updateTemplateAppliedApps: $name list = $appliedList")
         config.scope.forEach { (app, appInfo) ->
             if (appliedList.contains(app)) appInfo.applyTemplates.add(name)
             else appInfo.applyTemplates.remove(name)
