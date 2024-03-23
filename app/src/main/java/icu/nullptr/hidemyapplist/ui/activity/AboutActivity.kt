@@ -34,10 +34,6 @@ class AboutActivity : AbsAboutActivity() {
         items.add(Line())
         items.add(Contributor(R.drawable.cont_cpp_master, "LoveSy", "Idea provider", "https://github.com/yujincheng08"))
 
-        items.add(Category(getString(R.string.about_support)))
-        items.add(Card("Github\nhttps://github.com/pumPCin/HMAL"))
-        items.add(Line())
-
         items.add(Category(getString(R.string.about_open_source)))
         items.add(License("MultiType", "drakeet", License.APACHE_2, "https://github.com/drakeet/MultiType"))
         items.add(License("about-page", "drakeet", License.APACHE_2, "https://github.com/drakeet/about-page"))
