@@ -1,8 +1,8 @@
 name: Main
 
 on:
+  workflow_dispatch:
   push:
-    workflow_dispatch:
     branches: [ master ]
     paths-ignore:
       - '.github/ISSUE_TEMPLATE/**'

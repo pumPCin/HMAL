@@ -10,7 +10,7 @@
     <string name="title_app_select">Uygulama Seç</string>
     <string name="title_app_settings">Uygulama ayarları</string>
     <string name="title_about">Hakkında</string>
-    <string name="do_not_dual">HMA\'yı 2. Kullanıcı Hesabına Yüklemeyin</string>
+    <string name="do_not_dual">HMAL\'yı 2. Kullanıcı Hesabına Yüklemeyin</string>
     <string name="show_crash_log">Kilitlenme günlüğünü göster</string>
     <string name="config_damaged">Ayar Dosyası Bozuk. Uygulama Önbelleğini Silin</string>
     <string name="edit_list">Listeyi Düzenle</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Sistem hizmeti çalışıyor [%d]</string>
     <string name="home_xposed_service_off">Sistem servisi çalışmıyor</string>
     <string name="home_xposed_service_old">Modül güncellendi, yeniden başlatma gerekli</string>
-    <string name="home_xposed_filter_count">Hma, Toplam %d isteği filtreledi</string>
+    <string name="home_xposed_filter_count">HMAL, Toplam %d isteği filtreledi</string>
     <string name="home_manage">Manage</string>
     <string name="home_detection_test">Tespit testi</string>
     <string name="home_download_test_app_title">Test uygulamasını indir</string>
