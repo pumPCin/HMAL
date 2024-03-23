@@ -32,7 +32,6 @@
             android:id="@+id/enabled"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             android:text="@string/enabled"
             android:textColor="?colorPrimary"
             android:visibility="gone"
@@ -42,7 +41,6 @@
             android:id="@+id/package_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="serif"
             tools:text="com.example.app" />
     </LinearLayout>
 
