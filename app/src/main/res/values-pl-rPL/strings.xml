@@ -10,7 +10,7 @@
     <string name="title_app_select">Wybierz aplikacje</string>
     <string name="title_app_settings">Ustawienia aplikacji</string>
     <string name="title_about">O</string>
-    <string name="do_not_dual">Nie instaluj HMA na drugim użytkowniku</string>
+    <string name="do_not_dual">Nie instaluj HMAL na drugim użytkowniku</string>
     <string name="show_crash_log">Pokaż dziennik awarii</string>
     <string name="config_damaged">Plik konfiguracyjny uszkodzony. Proszę wyczyścić dane aplikacji</string>
     <string name="edit_list">Edytuj listę</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Uruchomiona usługa systemowa [%d]</string>
     <string name="home_xposed_service_off">Usługa systemowa nie działa</string>
     <string name="home_xposed_service_old">Moduł zaktualizowany, wymaga ponownego uruchomienia</string>
-    <string name="home_xposed_filter_count">Hide My Applist has filtered total %d requests</string>
+    <string name="home_xposed_filter_count">HMAL has filtered total %d requests</string>
     <string name="home_manage">Zarządzanie</string>
     <string name="home_detection_test">Test wykrywalności</string>
     <string name="home_download_test_app_title">Pobierz aplikację testową</string>

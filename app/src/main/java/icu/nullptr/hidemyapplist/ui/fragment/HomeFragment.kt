@@ -115,7 +115,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             } else startActivity(intent)
         }
         binding.backupConfig.setOnClickListener {
-            backupSAFLauncher.launch("HMA_Config.json")
+            backupSAFLauncher.launch("HMAL_Config.json")
         }
         binding.restoreConfig.setOnClickListener {
             restoreSAFLauncher.launch("application/json")
@@ -172,9 +172,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     .setMessage(Html.fromHtml(updateInfo.content, Html.FROM_HTML_MODE_COMPACT))
                     .setPositiveButton("GitHub") { _, _ ->
                         startActivity(Intent(Intent.ACTION_VIEW, updateInfo.downloadUrl.toUri()))
-                    }
-                    .setNegativeButton("Telegram") { _, _ ->
-                        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/HideMyApplist")))
                     }
                     .setNeutralButton(android.R.string.cancel, null)
                     .show()

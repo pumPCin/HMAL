@@ -10,7 +10,7 @@
     <string name="title_app_select">Chọn ƯD</string>
     <string name="title_app_settings">Cài đặt ƯD</string>
     <string name="title_about">Giới thiệu</string>
-    <string name="do_not_dual">Không cài HMA lên người dùng thứ cấp</string>
+    <string name="do_not_dual">Không cài HMAL lên người dùng thứ cấp</string>
     <string name="show_crash_log">Xem nhật ký lỗi</string>
     <string name="config_damaged">Chỉnh tệp đã hư. Hãy xóa dữ liệu ứng dụng</string>
     <string name="edit_list">Sửa danh sách</string>
@@ -31,10 +31,10 @@
     <!-- Home -->
     <string name="home_xposed_activated">Mô đun đã kích hoạt [%s-%d]</string>
     <string name="home_xposed_not_activated">Mô đun ko kích hoạt</string>
-    <string name="home_xposed_service_on">Dịch vụ HMA đang chạy [%d]</string>
-    <string name="home_xposed_service_off">Dịch vụ HMA không chạy</string>
+    <string name="home_xposed_service_on">Dịch vụ HMAL đang chạy [%d]</string>
+    <string name="home_xposed_service_off">Dịch vụ HMAL không chạy</string>
     <string name="home_xposed_service_old">Mô đun đã cập nhật, cần khởi động lại máy</string>
-    <string name="home_xposed_filter_count">Hide My Applist đã lọc tổng cộng %d yêu cầu</string>
+    <string name="home_xposed_filter_count">HMAL đã lọc tổng cộng %d yêu cầu</string>
     <string name="home_manage">Quản lý</string>
     <string name="home_detection_test">Kiểm thử</string>
     <string name="home_download_test_app_title">Tải ứng dụng kiểm thử</string>

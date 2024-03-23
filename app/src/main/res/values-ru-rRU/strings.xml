@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">Главная</string>
     <string name="title_logs">Логи</string>
     <string name="title_settings">Настройки</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">Выберите приложения</string>
     <string name="title_app_settings">Настройки приложения</string>
     <string name="title_about">О модуле</string>
-    <string name="do_not_dual">Не устанавливать HMA для второго пользователя</string>
+    <string name="do_not_dual">Не устанавливать HMAL для второго пользователя</string>
     <string name="show_crash_log">Показывать логи вылета</string>
     <string name="config_damaged">Файл настроек повреждён. Пожалуйста, очистите данные приложения</string>
     <string name="edit_list">Редактировать список</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Системная служба работает [%d]</string>
     <string name="home_xposed_service_off">Системная служба не работает</string>
     <string name="home_xposed_service_old">Модуль был обновлён, требуется перезагрузка</string>
-    <string name="home_xposed_filter_count">Всего Hide My Applist отфильтровал %d запросов</string>
+    <string name="home_xposed_filter_count">Всего HMAL отфильтровал %d запросов</string>
     <string name="home_manage">Управление</string>
     <string name="home_detection_test">Проверка на обнаружение</string>
     <string name="home_download_test_app_title">Скачать приложение для проверки</string>

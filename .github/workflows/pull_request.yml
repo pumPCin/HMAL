@@ -41,4 +41,4 @@ jobs:
         id: buildDebug
         run: |
           ./gradlew :app:assembleDebug
-          echo "debugName=$(ls app/build/apk/debug/HMA*-debug.apk | awk -F '(/|.apk)' '{print $6}')" >> $GITHUB_OUTPUT
+          echo "debugName=$(ls app/build/apk/debug/HMAL*-debug.apk | awk -F '(/|.apk)' '{print $6}')" >> $GITHUB_OUTPUT

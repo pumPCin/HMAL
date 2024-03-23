@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">Головна</string>
     <string name="title_logs">Журнали</string>
     <string name="title_settings">Налаштування</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">Виберіть додатки</string>
     <string name="title_app_settings">Налаштування додатка</string>
     <string name="title_about">Про додаток</string>
-    <string name="do_not_dual">Не встановлюйте HMA для додаткового користувача</string>
+    <string name="do_not_dual">Не встановлюйте HMAL для додаткового користувача</string>
     <string name="show_crash_log">Показати журнал збоїв</string>
     <string name="config_damaged">Файл конфігурації пошкоджено. Очистіть дані додатку</string>
     <string name="edit_list">Редагувати список</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Системна служба працює [%d]</string>
     <string name="home_xposed_service_off">Системна служба не працює</string>
     <string name="home_xposed_service_old">Модуль оновлено, потрібно перезавантажити</string>
-    <string name="home_xposed_filter_count">Hide My Applist відфільтрував %d запитів</string>
+    <string name="home_xposed_filter_count">HMAL відфільтрував %d запитів</string>
     <string name="home_manage">Керувати</string>
     <string name="home_detection_test">Перевірка на виявлення</string>
     <string name="home_download_test_app_title">Завантажити додаток для перевірки</string>

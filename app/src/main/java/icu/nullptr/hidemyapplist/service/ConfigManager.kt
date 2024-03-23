@@ -13,7 +13,7 @@ object ConfigManager {
 
     data class TemplateInfo(val name: String?, val isWhiteList: Boolean)
 
-    private const val TAG = "ConfigManager"
+    private const val TAG = "HMAL-CM"
     private lateinit var config: JsonConfig
     val configFile = File("${hmaApp.filesDir.absolutePath}/config.json")
 

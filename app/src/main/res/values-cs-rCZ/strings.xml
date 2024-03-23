@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">Domů</string>
     <string name="title_logs">Logy</string>
     <string name="title_settings">Nastavení</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">Vybrat aplikace</string>
     <string name="title_app_settings">Nastavení aplikace</string>
     <string name="title_about">O aplikaci</string>
-    <string name="do_not_dual">Neinstalujte HMA na jiném uživateli</string>
+    <string name="do_not_dual">Neinstalujte HMAL na jiném uživateli</string>
     <string name="show_crash_log">Zobrazit protokol o selhání</string>
     <string name="config_damaged">Poškozený konfigurační soubor. Vyčistěte prosím data aplikace</string>
     <string name="edit_list">Upravit seznam</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Systémová služba běží [%d]</string>
     <string name="home_xposed_service_off">Systémová služba neběží</string>
     <string name="home_xposed_service_old">Modul aktualizován, je třeba restartovat</string>
-    <string name="home_xposed_filter_count">Hide My Applist odfiltroval celkem %d požadavků</string>
+    <string name="home_xposed_filter_count">HMAL odfiltroval celkem %d požadavků</string>
     <string name="home_manage">Spravovat</string>
     <string name="home_detection_test">Detekční test</string>
     <string name="home_download_test_app_title">Stáhněte si testovací aplikaci</string>

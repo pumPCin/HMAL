@@ -9,8 +9,7 @@ public class Constants {
     public static final String PROVIDER_AUTHORITY = APP_PACKAGE_NAME + ".ServiceProvider";
     public static final String GMS_PACKAGE_NAME = "com.google.android.gms";
     public static final String GSF_PACKAGE_NAME = "com.google.android.gsf";
-    public static final String UPDATE_URL_BASE = "https://api.nullptr.icu/android/hide-my-applist/static/";
-    public static final String TRANSLATE_URL = "https://crowdin.com/project/hide-my-applist";
+    public static final String UPDATE_URL_BASE = "https://github.com/pumPCin/HMAL/releases";
     public static final String CLASS_PMS = "com.android.server.pm.PackageManagerService";
 
     public static final String ANDROID_APP_DATA_ISOLATION_ENABLED_PROPERTY = "persist.zygote.app_data_isolation";

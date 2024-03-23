@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicReference
 class PmsHookTarget28(private val service: HMAService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "PmsHookTarget28"
+        private const val TAG = "HMAL-PHT28"
     }
 
     private val hooks = mutableListOf<XC_MethodHook.Unhook>()

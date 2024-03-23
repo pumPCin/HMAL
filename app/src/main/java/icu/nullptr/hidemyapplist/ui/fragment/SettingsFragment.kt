@@ -66,7 +66,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "voldAppDataIsolation" -> CommonUtils.isVoldAppDataIsolationEnabled
                 "forceMountData" -> ConfigManager.forceMountData
                 "disableUpdate" -> PrefManager.disableUpdate
-                "receiveBetaUpdate" -> PrefManager.receiveBetaUpdate
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }
@@ -91,7 +90,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "appDataIsolation" -> Unit
                 "voldAppDataIsolation" -> Unit
                 "disableUpdate" -> PrefManager.disableUpdate = value
-                "receiveBetaUpdate" -> PrefManager.receiveBetaUpdate = value
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }
@@ -188,14 +186,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                     LocaleDelegate.defaultLocale = locale
                     hmaApp.resources.updateConfiguration(config, resources.displayMetrics)
                     activity?.recreate()
-                    true
-                }
-            }
-
-            findPreference<Preference>("translation")?.let {
-                it.summary = getString(R.string.settings_translate_summary, getString(R.string.app_name))
-                it.setOnPreferenceClickListener {
-                    startActivity(Intent(Intent.ACTION_VIEW, Constants.TRANSLATE_URL.toUri()))
                     true
                 }
             }

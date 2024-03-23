@@ -14,7 +14,7 @@ import java.lang.reflect.Proxy
 
 object ServiceClient : IHMAService, DeathRecipient {
 
-    private const val TAG = "ServiceClient"
+    private const val TAG = "HMAL-SC"
 
     private class ServiceProxy(private val obj: IHMAService) : InvocationHandler {
         override fun invoke(proxy: Any?, method: Method, args: Array<out Any?>?): Any? {

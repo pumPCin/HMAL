@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">Início</string>
     <string name="title_logs">Registros</string>
     <string name="title_settings">Configurações</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">Selecionar aplicativo</string>
     <string name="title_app_settings">Configurações do aplicativo</string>
     <string name="title_about">Sobre</string>
-    <string name="do_not_dual">Não instale HMA no usuário secundário</string>
+    <string name="do_not_dual">Não instale HMAL no usuário secundário</string>
     <string name="show_crash_log">Mostrar registro do crash</string>
     <string name="config_damaged">Arquivo de configuração danificado. Por favor limpe os dados do aplicativo</string>
     <string name="edit_list">Editar lista</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">Serviço do sistema funcionando [%d]</string>
     <string name="home_xposed_service_off">Serviço do sistema não está funcionando</string>
     <string name="home_xposed_service_old">Módulo atualizado, precisa reiniciar</string>
-    <string name="home_xposed_filter_count">Hide My Applist foi filtrado total %d requisitos</string>
+    <string name="home_xposed_filter_count">HMAL foi filtrado total %d requisitos</string>
     <string name="home_manage">Gerenciar</string>
     <string name="home_detection_test">Teste de detecção</string>
     <string name="home_download_test_app_title">Baixar aplicativo de teste</string>

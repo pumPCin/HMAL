@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicReference
 class PmsHookTarget33(private val service: HMAService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "PmsHookTarget33"
+        private const val TAG = "HMAL-PHT33"
     }
 
     private val getPackagesForUidMethod by lazy {

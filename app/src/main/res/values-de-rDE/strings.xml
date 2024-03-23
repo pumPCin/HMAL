@@ -10,7 +10,7 @@
     <string name="title_app_select">Apps auswählen</string>
     <string name="title_app_settings">App Einstellungen</string>
     <string name="title_about">Über</string>
-    <string name="do_not_dual">HMA nicht zum zweiten Benutzer installieren</string>
+    <string name="do_not_dual">HMAL nicht zum zweiten Benutzer installieren</string>
     <string name="show_crash_log">Absturzprotokoll anzeigen</string>
     <string name="config_damaged">Konfigurationsdatei beschädigt. Bitte Appdaten löschen</string>
     <string name="edit_list">Liste ändern</string>

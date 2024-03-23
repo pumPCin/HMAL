@@ -8,10 +8,6 @@
             android:key="language"
             android:summary="%s"
             android:title="@string/settings_language" />
-        <Preference
-            android:icon="@drawable/outline_translate_24"
-            android:key="translation"
-            android:title="@string/settings_translate" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/settings_theme">
@@ -89,11 +85,5 @@
             android:icon="@drawable/outline_update_disabled_24"
             android:key="disableUpdate"
             android:title="@string/settings_disable_update" />
-        <SwitchPreference
-            android:dependency="disableUpdate"
-            android:icon="@drawable/outline_speed_24"
-            android:key="receiveBetaUpdate"
-            android:summary="@string/settings_receive_beta_update_summary"
-            android:title="@string/settings_receive_beta_update" />
     </PreferenceCategory>
 </PreferenceScreen>

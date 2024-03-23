@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">Accueil</string>
     <string name="title_logs">Journal</string>
     <string name="title_settings">Réglages</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">Sélectionner les applications</string>
     <string name="title_app_settings">Réglages pour l\'application</string>
     <string name="title_about">A propos</string>
-    <string name="do_not_dual">Ne pas installer HMA dans l\'utilisateur secondaire</string>
+    <string name="do_not_dual">Ne pas installer HMAL dans l\'utilisateur secondaire</string>
     <string name="show_crash_log">Afficher le journal de plantage</string>
     <string name="config_damaged">Fichier de configuration endommagé. Merci de nettoyer les données de l\'application</string>
     <string name="edit_list">Éditer la liste</string>

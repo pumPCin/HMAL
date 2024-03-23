@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Hide My Applist</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">ホーム</string>
     <string name="title_logs">ログ</string>
     <string name="title_settings">設定</string>
@@ -10,7 +10,7 @@
     <string name="title_app_select">アプリの選択</string>
     <string name="title_app_settings">アプリの設定</string>
     <string name="title_about">About</string>
-    <string name="do_not_dual">Do not install HMA to secondary user</string>
+    <string name="do_not_dual">Do not install HMAL to secondary user</string>
     <string name="show_crash_log">クラッシュログの表示</string>
     <string name="config_damaged">構成ファイルが破損しています。 アプリのデータを消去してください。</string>
     <string name="edit_list">リストの編集</string>
@@ -34,7 +34,7 @@
     <string name="home_xposed_service_on">システムサービスの実行中 [%d]</string>
     <string name="home_xposed_service_off">システムサービスは実行されていません</string>
     <string name="home_xposed_service_old">モジュールが更新されました。再起動してください。</string>
-    <string name="home_xposed_filter_count">Hide My Applist は合計 %d リクエストをフィルタリングしました</string>
+    <string name="home_xposed_filter_count">HMAL は合計 %d リクエストをフィルタリングしました</string>
     <string name="home_manage">管理</string>
     <string name="home_detection_test">検出のテスト</string>
     <string name="home_download_test_app_title">テストアプリのダウンロード</string>

@@ -19,7 +19,6 @@ object PrefManager {
 
     private const val PREF_HIDE_ICON = "hide_icon"
     private const val PREF_DISABLE_UPDATE = "disable_update"
-    private const val PREF_RECEIVE_BETA_UPDATE = "receive_beta_update"
 
     private const val PREF_APP_FILTER_SHOW_SYSTEM = "app_filter_show_system"
     private const val PREF_APP_FILTER_SORT_METHOD = "app_filter_sort_method"
@@ -71,10 +70,6 @@ object PrefManager {
     var disableUpdate: Boolean
         get() = pref.getBoolean(PREF_DISABLE_UPDATE, false)
         set(value) = pref.edit().putBoolean(PREF_DISABLE_UPDATE, value).apply()
-
-    var receiveBetaUpdate: Boolean
-        get() = pref.getBoolean(PREF_RECEIVE_BETA_UPDATE, false)
-        set(value) = pref.edit().putBoolean(PREF_RECEIVE_BETA_UPDATE, value).apply()
 
     var appFilter_showSystem: Boolean
         get() = pref.getBoolean(PREF_APP_FILTER_SHOW_SYSTEM, false)

@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:textAppearance="?textAppearanceTitleSmall"
-            tools:text="HMA-Bridge" />
+            tools:text="HMAL-B" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/message"
@@ -39,7 +39,7 @@
             android:layout_marginVertical="2dp"
             android:fontFamily="monospace"
             android:textAppearance="?textAppearanceBodySmall"
-            tools:text="HMA service initialized" />
+            tools:text="HMAL-S initialized" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/date"

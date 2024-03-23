@@ -10,7 +10,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage
 import icu.nullptr.hidemyapplist.common.Constants
 import kotlin.concurrent.thread
 
-private const val TAG = "HMA-XposedEntry"
+private const val TAG = "HMAL-XE"
 
 @Suppress("unused")
 class XposedEntry : IXposedHookZygoteInit, IXposedHookLoadPackage {

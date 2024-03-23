@@ -15,7 +15,7 @@ import icu.nullptr.hidemyapplist.xposed.logI
 class ZygoteArgsHook(private val service: HMAService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "ZygoteArgsHook"
+        private const val TAG = "HMAL-ZAH"
         private val sAppDataIsolationEnabled = CommonUtils.isAppDataIsolationEnabled
         private val sVoldAppDataIsolationEnabled = CommonUtils.isVoldAppDataIsolationEnabled
     }

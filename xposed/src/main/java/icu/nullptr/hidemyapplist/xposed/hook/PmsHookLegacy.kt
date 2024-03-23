@@ -17,7 +17,7 @@ import java.lang.reflect.Method
 class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "PmsHookLegacy"
+        private const val TAG = "HMAL-PHL"
     }
 
     private val hooks = mutableSetOf<XC_MethodHook.Unhook>()

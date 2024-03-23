@@ -10,7 +10,7 @@
     <string name="title_app_select">Selectează aplicații</string>
     <string name="title_app_settings">Setările aplicației</string>
     <string name="title_about">Despre</string>
-    <string name="do_not_dual">Nu instalați HMA pe utilizatorul secundar</string>
+    <string name="do_not_dual">Nu instalați HMAL pe utilizatorul secundar</string>
     <string name="show_crash_log">Arată jurnalul de erori</string>
     <string name="config_damaged">Fișier de configurare deteriorat. Vă rugăm să curățați datele aplicației</string>
     <string name="edit_list">Lista de editare</string>
