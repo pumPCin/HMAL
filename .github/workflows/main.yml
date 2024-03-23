@@ -1,0 +1,82 @@
+name: Main
+
+on:
+  push:
+    workflow_dispatch:
+    branches: [ master ]
+    paths-ignore:
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/workflows/issue.yml'
+      - '**.md'
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest ]
+    if: ${{ !startsWith(github.event.head_commit.message, '[skip ci]') }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+
+      - name: Gradle wrapper validation
+        uses: gradle/wrapper-validation-action@v2
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Write key
+        if: github.event_name != 'pull_request'
+        run: |
+          echo officialBuild=true >> local.properties
+          echo buildWithGitSuffix=true >> local.properties
+          echo storePassword='android' >> local.properties
+          echo keyAlias='androiddebugkey' >> local.properties
+          echo keyPassword='android' >> local.properties
+          echo fileDir=`pwd`/key.jks >> local.properties
+
+      - name: Cache gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
+          restore-keys: ${{ runner.os }}-gradle-
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Gradle prebuild
+        run: |
+          echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
+          ./gradlew prebuild
+
+      - name: Build release
+        id: buildRelease
+        run: |
+          ./gradlew --info :app:buildRelease
+          echo "releaseName=$(ls app/build/apk/release/HMA*-release.apk | awk -F '(/|.apk)' '{print $5}')" >> $GITHUB_OUTPUT
+
+      - name: Upload release
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.buildRelease.outputs.releaseName }}
+          path: "app/build/apk/release/HMA*-release.apk"
+
+      - name: Upload mappings
+        uses: actions/upload-artifact@v4
+        with:
+          name: mappings
+          path: "app/build/outputs/mapping/release"
