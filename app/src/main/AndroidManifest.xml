@@ -7,8 +7,6 @@
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="QueryAllPackagesPermission" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name="icu.nullptr.hidemyapplist.MyApp"
         android:allowBackup="true"
