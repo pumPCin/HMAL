@@ -18,7 +18,6 @@ import com.google.android.material.transition.MaterialElevationScale
 import com.google.android.hmal.BuildConfig
 import com.google.android.hmal.R
 import com.google.android.hmal.databinding.FragmentHomeBinding
-import icu.nullptr.hidemyapplist.data.fetchLatestUpdate
 import icu.nullptr.hidemyapplist.hmaApp
 import icu.nullptr.hidemyapplist.service.ConfigManager
 import icu.nullptr.hidemyapplist.service.PrefManager
@@ -107,10 +106,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.restoreConfig.setOnClickListener {
             restoreSAFLauncher.launch("application/json")
         }
-
-        lifecycleScope.launch {
-            loadUpdateDialog()
-        }
     }
 
     override fun onStart() {
@@ -145,35 +140,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         } else {
             binding.serviceStatus.setText(R.string.home_xposed_service_off)
             binding.filterCount.visibility = View.GONE
-        }
-    }
-
-    private suspend fun loadUpdateDialog() {
-        if (PrefManager.disableUpdate) return
-        val updateInfo = fetchLatestUpdate() ?: return
-        if (updateInfo.versionCode > BuildConfig.VERSION_CODE) {
-            withContext(Dispatchers.Main) {
-                MaterialAlertDialogBuilder(requireContext())
-                    .setCancelable(false)
-                    .setTitle(getString(R.string.home_new_update, updateInfo.versionName))
-                    .setMessage(Html.fromHtml(updateInfo.content, Html.FROM_HTML_MODE_COMPACT))
-                    .setPositiveButton("GitHub") { _, _ ->
-                        startActivity(Intent(Intent.ACTION_VIEW, updateInfo.downloadUrl.toUri()))
-                    }
-                    .setNeutralButton(android.R.string.cancel, null)
-                    .show()
-            }
-        } else if (updateInfo.versionCode > PrefManager.lastVersion) {
-            withContext(Dispatchers.Main) {
-                MaterialAlertDialogBuilder(requireContext())
-                    .setCancelable(false)
-                    .setTitle(getString(R.string.home_update, updateInfo.versionName))
-                    .setMessage(Html.fromHtml(updateInfo.content, Html.FROM_HTML_MODE_COMPACT))
-                    .setPositiveButton(android.R.string.ok) { _, _ ->
-                        PrefManager.lastVersion = BuildConfig.VERSION_CODE
-                    }
-                    .show()
-            }
         }
     }
 }

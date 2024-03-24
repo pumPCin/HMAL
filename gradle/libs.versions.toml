@@ -2,7 +2,6 @@
 agp = "8.3.1"
 kotlin = "1.9.23"
 nav = "2.7.7"
-rxhttp = "3.2.4"
 hidden-api = "4.3.3"
 
 [plugins]
@@ -26,12 +25,8 @@ com-drakeet-about = { module = "com.drakeet.about:about", version = "2.5.2" }
 com-drakeet-multitype = { module = "com.drakeet.multitype:multitype", version = "4.3.0" }
 com-github-kirich1409-viewbindingpropertydelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate", version = "1.5.9" }
 com-github-kyuubiran-ezxhelper = { module = "com.github.kyuubiran:EzXHelper", version = "1.0.3" }
-com-github-liujingxing-rxhttp = { module = "com.github.liujingxing.rxhttp:rxhttp", version.ref = "rxhttp" }
-com-github-liujingxing-rxhttp-compiler = { module = "com.github.liujingxing.rxhttp:rxhttp-compiler", version.ref = "rxhttp" }
-com-github-liujingxing-rxhttp-converter-serialization = { module = "com.github.liujingxing.rxhttp:converter-serialization", version.ref = "rxhttp" }
 com-github-topjohnwu-libsu-core = { module = "com.github.topjohnwu.libsu:core", version = "5.2.2" }
 com-google-android-material = { module = "com.google.android.material:material", version = "1.11.0" }
-com-squareup-okhttp3 = { module = "com.squareup.okhttp3:okhttp", version = "4.12.0" }
 de-robv-android-xposed-api = { module = "de.robv.android.xposed:api", version = "82" }
 dev-rikka-hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "hidden-api" }
 dev-rikka-hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }

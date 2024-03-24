@@ -64,7 +64,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "appDataIsolation" -> CommonUtils.isAppDataIsolationEnabled
                 "voldAppDataIsolation" -> CommonUtils.isVoldAppDataIsolationEnabled
                 "forceMountData" -> ConfigManager.forceMountData
-                "disableUpdate" -> PrefManager.disableUpdate
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }
@@ -86,7 +85,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "hideIcon" -> PrefManager.hideIcon = value
                 "appDataIsolation" -> Unit
                 "voldAppDataIsolation" -> Unit
-                "disableUpdate" -> PrefManager.disableUpdate = value
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }

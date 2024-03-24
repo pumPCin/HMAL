@@ -9,9 +9,6 @@
     public static ** valueOf(java.lang.String);
 }
 
--keep class icu.nullptr.hidemyapplist.data.UpdateData { *; }
--keep class icu.nullptr.hidemyapplist.data.UpdateData$* { *; }
-
 -keep,allowoptimization class * extends androidx.preference.PreferenceFragmentCompat
 -keepclassmembers class com.google.android.hmal.databinding.**  {
     public <methods>;
