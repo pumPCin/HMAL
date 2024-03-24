@@ -41,7 +41,6 @@ class PmsHookTarget33(private val service: HMAService) : IFrameworkHook {
                 for (caller in callingApps) {
                     if (service.shouldHide(caller, targetApp)) {
                         param.result = true
-                        service.filterCount++
                         val last = lastFilteredApp.getAndSet(caller)
                         return@hookBefore
                     }

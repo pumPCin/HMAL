@@ -53,7 +53,7 @@ fun Project.configureBaseExtension() {
             versionCode = gitCommitCount
             versionName = appVerName
             if (localProperties.getProperty("buildWithGitSuffix").toBoolean())
-                versionNameSuffix = ".r${gitCommitCount}.${gitCommitHash}"
+                versionNameSuffix = ".r${gitCommitCount}"
 
             consumerProguardFiles("proguard-rules.pro")
         }

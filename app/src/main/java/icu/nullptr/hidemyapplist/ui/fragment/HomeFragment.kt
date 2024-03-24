@@ -135,11 +135,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             } else {
                 binding.serviceStatus.text = getString(R.string.home_xposed_service_on, serviceVersion)
             }
-            binding.filterCount.visibility = View.VISIBLE
-            binding.filterCount.text = getString(R.string.home_xposed_filter_count, ServiceClient.filterCount)
         } else {
             binding.serviceStatus.setText(R.string.home_xposed_service_off)
-            binding.filterCount.visibility = View.GONE
         }
     }
 }

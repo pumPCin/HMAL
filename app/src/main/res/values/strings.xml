@@ -36,7 +36,6 @@
     <string name="home_xposed_service_on">System service running [%d]</string>
     <string name="home_xposed_service_off">System service not running</string>
     <string name="home_xposed_service_old">Module updated, need reboot</string>
-    <string name="home_xposed_filter_count">HMAL has filtered total %d requests</string>
     <string name="home_manage">Manage</string>
     <string name="home_backup_and_restore">Backup &amp; Restore</string>
     <string name="home_backup_config">Backup config</string>

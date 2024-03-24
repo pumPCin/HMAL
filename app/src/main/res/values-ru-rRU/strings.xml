@@ -33,7 +33,6 @@
     <string name="home_xposed_service_on">Системная служба работает [%d]</string>
     <string name="home_xposed_service_off">Системная служба не работает</string>
     <string name="home_xposed_service_old">Модуль был обновлён, требуется перезагрузка</string>
-    <string name="home_xposed_filter_count">Всего HMAL отфильтровал %d запросов</string>
     <string name="home_manage">Управление</string>
     <string name="home_backup_and_restore">Экспорт &amp; Импорт</string>
     <string name="home_backup_config">Экспорт настроек</string>

@@ -44,10 +44,6 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
                 isHidden = true
             }
         }
-
-        if (isHidden) {
-            service.filterCount++
-        }
     }
 
     private fun setResult(
@@ -58,7 +54,6 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
         if (caller !in service.config.scope) return@hookAfter
 
         if (service.shouldHide(caller, param.args[0] as String?)) {
-            service.filterCount++
             param.result = result
         }
     }
@@ -76,7 +71,6 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
             else -> emptyList()
         }.forEach {
             if (service.shouldHide(caller, it)) {
-                service.filterCount++
                 param.result = result
                 return@hookAfter
             }

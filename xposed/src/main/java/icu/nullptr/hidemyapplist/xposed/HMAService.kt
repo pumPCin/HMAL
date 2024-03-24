@@ -26,17 +26,6 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     var config = JsonConfig().apply { forceMountData = false }
         private set
 
-    var filterCount = 0
-        @JvmName("getFilterCountInternal") get
-        set(value) {
-            field = value
-            if (field % 100 == 0) {
-                synchronized(configLock) {
-                    File("$dataDir/filter_count").writeText(field.toString())
-                }
-            }
-        }
-
     init {
         searchDataDir()
         instance = this
@@ -60,13 +49,6 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     }
 
     private fun loadConfig() {
-        File("$dataDir/filter_count").also {
-            runCatching {
-                if (it.exists()) filterCount = it.readText().toInt()
-            }.onFailure { e ->
-                it.writeText("0")
-            }
-        }
         if (!configFile.exists()) {
             return
         }
@@ -148,6 +130,4 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     }
 
     override fun getServiceVersion() = BuildConfig.SERVICE_VERSION
-
-    override fun getFilterCount() = filterCount
 }
