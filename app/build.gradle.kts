@@ -98,17 +98,13 @@ dependencies {
     implementation(libs.com.drakeet.about)
     implementation(libs.com.drakeet.multitype)
     implementation(libs.com.github.kirich1409.viewbindingpropertydelegate)
-    implementation(libs.com.github.liujingxing.rxhttp)
-    implementation(libs.com.github.liujingxing.rxhttp.converter.serialization)
     implementation(libs.com.github.topjohnwu.libsu.core)
     implementation(libs.com.google.android.material)
-    implementation(libs.com.squareup.okhttp3)
     implementation(libs.dev.rikka.hidden.compat)
     implementation(libs.dev.rikka.rikkax.material)
     implementation(libs.dev.rikka.rikkax.material.preference)
     implementation(libs.me.zhanghai.android.appiconloader)
     compileOnly(libs.dev.rikka.hidden.stub)
-    ksp(libs.com.github.liujingxing.rxhttp.compiler)
 }
 
 configurations.all {
