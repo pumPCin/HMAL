@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">Domů</string>
-    <string name="title_logs">Logy</string>
     <string name="title_settings">Nastavení</string>
     <string name="title_template_manage">Správa šablony</string>
     <string name="title_template_settings">Nastavení šablony</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">Systémová služba běží [%d]</string>
     <string name="home_xposed_service_off">Systémová služba neběží</string>
     <string name="home_xposed_service_old">Modul aktualizován, je třeba restartovat</string>
-    <string name="home_xposed_filter_count">HMAL odfiltroval celkem %d požadavků</string>
     <string name="home_manage">Spravovat</string>
-    <string name="home_detection_test">Detekční test</string>
-    <string name="home_download_test_app_title">Stáhněte si testovací aplikaci</string>
-    <string name="home_download_test_app_message">Vyvinuli jsme aplikaci pro individuální test detekce a do ní jsme migrovali test detekce. Chcete si jej nyní stáhnout?</string>
     <string name="home_backup_and_restore">Záloha &amp; Obnovení</string>
     <string name="home_backup_config">Konfigurace zálohování</string>
     <string name="home_restore_config">Konfigurace obnovení</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">Záložní soubor byl poškozen</string>
     <string name="home_export_failed">Export selhal</string>
     <string name="home_exported">Zálohovaná konfigurace</string>
-    <string name="home_new_update">K dispozici nová aktualizace: %s</string>
-    <string name="home_update">Aktualizace: %s</string>
     <!-- App select -->
     <string name="list_show_system">Zobrazit systémové aplikace</string>
     <string name="list_sorting">Řazení</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">Používá %d šablon</string>
     <string name="app_extra_apps_visible_count">%d dalších aplikací je viditelných</string>
     <string name="app_extra_apps_invisible_count">%d dalších aplikaci je skryto</string>
-    <!-- Logs -->
-    <string name="logs_save">Uložit protokoly</string>
-    <string name="logs_clear">Vymazat protokoly</string>
-    <string name="logs_empty">Žádné protokoly k uložení</string>
-    <string name="logs_saved">Protokoly uloženy</string>
     <!-- Settings -->
     <string name="settings_module">Modul</string>
     <string name="settings_data_isolation">Data isolation</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_detail_log">Podrobný protokol pro ladění</string>
-    <string name="settings_max_log_size">Protokol velikosti vyrovnávací paměti</string>
     <string name="settings_hide_icon">Skrýt ikonu modulu ve spouštěči</string>
     <string name="settings_hide_icon_summary">Aplikaci můžete stále otevřít ve správci Xposed</string>
     <string name="settings_language">Jazyk</string>
-    <string name="settings_translate">Podílet se na překladu</string>
-    <string name="settings_translate_summary">Pomozte nám přeložit %s do vašeho jazyka</string>
     <string name="settings_theme">Motiv</string>
     <string name="settings_system_theme_color">Barva motivu systému</string>
     <string name="settings_theme_color">Barva motivu</string>
@@ -118,10 +102,6 @@
     <string name="settings_force_clean_env">Force clean runtime environment (root)</string>
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
-    <string name="settings_update">Update</string>
-    <string name="settings_disable_update">Disable update notification</string>
-    <string name="settings_receive_beta_update">Receive beta update</string>
-    <string name="settings_receive_beta_update_summary">Beta version may be unstable</string>
     <!-- About -->
     <string name="about_description">        Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.
     </string>
@@ -131,7 +111,6 @@
     <string name="about_how_to_use_description_2">        Config modification effective in real time.
     </string>
     <string name="about_developer">Developer</string>
-    <string name="about_support">Support and feedback</string>
     <string name="about_open_source">Open source licenses</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>
