@@ -22,8 +22,6 @@ object PrefManager {
     private const val PREF_APP_FILTER_SHOW_SYSTEM = "app_filter_show_system"
     private const val PREF_APP_FILTER_SORT_METHOD = "app_filter_sort_method"
     private const val PREF_APP_FILTER_REVERSE_ORDER = "app_filter_reverse_order"
-    private const val PREF_LOG_FILTER_LEVEL = "log_filter_level"
-    private const val PREF_LOG_FILTER_REVERSE_ORDER = "log_filter_reverse_order"
 
     enum class SortMethod {
         BY_LABEL, BY_PACKAGE_NAME, BY_INSTALL_TIME, BY_UPDATE_TIME
@@ -77,12 +75,4 @@ object PrefManager {
     var appFilter_reverseOrder: Boolean
         get() = pref.getBoolean(PREF_APP_FILTER_REVERSE_ORDER, false)
         set(value) = pref.edit().putBoolean(PREF_APP_FILTER_REVERSE_ORDER, value).apply()
-
-    var logFilter_level: Int
-        get() = pref.getInt(PREF_LOG_FILTER_LEVEL, 0)
-        set(value) = pref.edit().putInt(PREF_LOG_FILTER_LEVEL, value).apply()
-
-    var logFilter_reverseOrder: Boolean
-        get() = pref.getBoolean(PREF_LOG_FILTER_REVERSE_ORDER, false)
-        set(value) = pref.edit().putBoolean(PREF_LOG_FILTER_REVERSE_ORDER, value).apply()
 }

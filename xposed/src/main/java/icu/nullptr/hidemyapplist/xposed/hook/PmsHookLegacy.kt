@@ -10,8 +10,6 @@ import icu.nullptr.hidemyapplist.common.Constants
 import icu.nullptr.hidemyapplist.xposed.HMAService
 import icu.nullptr.hidemyapplist.xposed.Utils
 import icu.nullptr.hidemyapplist.xposed.Utils.getBinderCaller
-import icu.nullptr.hidemyapplist.xposed.logD
-import icu.nullptr.hidemyapplist.xposed.logI
 import java.lang.reflect.Method
 
 class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
@@ -44,7 +42,6 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
             if (service.shouldHide(caller, pkg)) {
                 iterator.remove()
                 isHidden = true
-                if (service.config.detailLog) removed.add(pkg!!)
             }
         }
     }
@@ -58,7 +55,6 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
 
         if (service.shouldHide(caller, param.args[0] as String?)) {
             param.result = result
-            logI(TAG, "@${method.name} caller: $caller param: ${param.args[0]}")
         }
     }
 
@@ -76,14 +72,12 @@ class PmsHookLegacy(private val service: HMAService) : IFrameworkHook {
         }.forEach {
             if (service.shouldHide(caller, it)) {
                 param.result = result
-                logI(TAG, "@${method.name} caller: $caller param: ${param.args[0]}")
                 return@hookAfter
             }
         }
     }
 
     override fun load() {
-        logI(TAG, "Load hook")
         val pmMethods = buildSet<Method> {
             addAll(service.pms::class.java.declaredMethods)
             val pmsClass = loadClass(Constants.CLASS_PMS)

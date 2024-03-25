@@ -23,7 +23,6 @@ class PmsHookTarget28(private val service: HMAService) : IFrameworkHook {
 
     @Suppress("UNCHECKED_CAST")
     override fun load() {
-        logI(TAG, "Load hook")
         hooks += findMethod(service.pms::class.java, findSuper = true) {
             name == "filterAppAccessLPr" && parameterCount == 5
         }.hookBefore { param ->
@@ -39,13 +38,10 @@ class PmsHookTarget28(private val service: HMAService) : IFrameworkHook {
                     if (service.shouldHide(caller, targetApp)) {
                         param.result = true
                         val last = lastFilteredApp.getAndSet(caller)
-                        if (last != caller) logI(TAG, "@filterAppAccessLPr query from $caller")
-                        logD(TAG, "@filterAppAccessLPr caller: $callingUid $caller, target: $targetApp")
                         return@hookBefore
                     }
                 }
             }.onFailure {
-                logE(TAG, "Fatal error occurred, disable hooks", it)
                 unload()
             }
         }
@@ -67,8 +63,6 @@ class PmsHookTarget28(private val service: HMAService) : IFrameworkHook {
                     for (caller in callingApps) {
                         if (service.shouldHide(caller, targetApp)) {
                             val last = lastFilteredApp.getAndSet(caller)
-                            if (last != caller) logI(TAG, "@applyPostResolutionFilter query from $caller")
-                            logD(TAG, "@applyPostResolutionFilter caller: $callingUid $caller, target: $targetApp")
                             listToRemove.add(resolveInfo)
                             break
                         }
@@ -76,7 +70,6 @@ class PmsHookTarget28(private val service: HMAService) : IFrameworkHook {
                 }
                 list.removeAll(listToRemove)
             }.onFailure {
-                logE(TAG, "Fatal error occurred, disable hooks", it)
                 unload()
             }
         }
