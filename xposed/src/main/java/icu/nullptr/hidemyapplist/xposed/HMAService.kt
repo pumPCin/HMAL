@@ -15,15 +15,19 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     }
 
     @Volatile
+    var logcatAvailable = false
 
     private lateinit var dataDir: String
     private lateinit var configFile: File
+    private lateinit var logFile: File
+    private lateinit var oldLogFile: File
 
     private val configLock = Any()
+    private val loggerLock = Any()
     private val systemApps = mutableSetOf<String>()
     private val frameworkHooks = mutableSetOf<IFrameworkHook>()
 
-    var config = JsonConfig().apply { forceMountData = false }
+    var config = JsonConfig().apply { detailLog = true }
         private set
 
     init {
@@ -31,6 +35,7 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
         instance = this
         loadConfig()
         installHooks()
+        logI(TAG, "HMA service initialized")
     }
 
     private fun searchDataDir() {
@@ -45,23 +50,35 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
             dataDir = "/data/system/h_m_a_l_" + Utils.generateRandomString(16)
         }
 
+        File("$dataDir/log").mkdirs()
         configFile = File("$dataDir/config.json")
+        logFile = File("$dataDir/log/runtime.log")
+        oldLogFile = File("$dataDir/log/old.log")
+        logFile.renameTo(oldLogFile)
+        logFile.createNewFile()
+
+        logcatAvailable = true
+        logI(TAG, "Data dir: $dataDir")
     }
 
     private fun loadConfig() {
         if (!configFile.exists()) {
+            logI(TAG, "Config file not found")
             return
         }
         val loading = runCatching {
             val json = configFile.readText()
             JsonConfig.parse(json)
         }.getOrElse {
+            logE(TAG, "Failed to parse config.json", it)
             return
         }
         if (loading.configVersion != BuildConfig.CONFIG_VERSION) {
+            logW(TAG, "Config version mismatch, need to reload")
             return
         }
         config = loading
+        logI(TAG, "Config loaded")
     }
 
     private fun installHooks() {
@@ -84,6 +101,7 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
         }
 
         frameworkHooks.forEach(IFrameworkHook::load)
+        logI(TAG, "Hooks installed")
     }
 
     fun isHookEnabled(packageName: String) = config.scope.containsKey(packageName)
@@ -106,10 +124,15 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     }
 
     override fun stopService(cleanEnv: Boolean) {
+        logI(TAG, "Stop service")
+        synchronized(loggerLock) {
+            logcatAvailable = false
+        }
         synchronized(configLock) {
             frameworkHooks.forEach(IFrameworkHook::unload)
             frameworkHooks.clear()
             if (cleanEnv) {
+                logI(TAG, "Clean runtime environment")
                 File(dataDir).deleteRecursively()
                 return
             }
@@ -117,17 +140,39 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
         instance = null
     }
 
+    fun addLog(parsedMsg: String) {
+        synchronized(loggerLock) {
+            if (!logcatAvailable) return
+            if (logFile.length() / 1024 > config.maxLogSize) clearLogs()
+            logFile.appendText(parsedMsg)
+        }
+    }
+
     override fun syncConfig(json: String) {
         synchronized(configLock) {
             configFile.writeText(json)
             val newConfig = JsonConfig.parse(json)
             if (newConfig.configVersion != BuildConfig.CONFIG_VERSION) {
+                logW(TAG, "Sync config: version mismatch, need reboot")
                 return
             }
             config = newConfig
             frameworkHooks.forEach(IFrameworkHook::onConfigChanged)
         }
+        logD(TAG, "Config synced")
     }
 
     override fun getServiceVersion() = BuildConfig.SERVICE_VERSION
+
+    override fun getLogs() = synchronized(loggerLock) {
+        logFile.readText()
+    }
+
+    override fun clearLogs() {
+        synchronized(loggerLock) {
+            oldLogFile.delete()
+            logFile.renameTo(oldLogFile)
+            logFile.createNewFile()
+        }
+    }
 }

@@ -7,4 +7,8 @@ interface IHMAService {
     void syncConfig(String json) = 1;
 
     int getServiceVersion() = 2;
+
+    String getLogs() = 4;
+
+    void clearLogs() = 5;
 }

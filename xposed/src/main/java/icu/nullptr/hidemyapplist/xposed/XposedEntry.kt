@@ -27,6 +27,7 @@ class XposedEntry : IXposedHookZygoteInit, IXposedHookLoadPackage {
             }
         } else if (lpparam.packageName == "android") {
             EzXHelperInit.initHandleLoadPackage(lpparam)
+            logI(TAG, "Hook entry")
 
             var serviceManagerHook: XC_MethodHook.Unhook? = null
             serviceManagerHook = findMethod("android.os.ServiceManager") {
@@ -35,10 +36,13 @@ class XposedEntry : IXposedHookZygoteInit, IXposedHookLoadPackage {
                 if (param.args[0] == "package") {
                     serviceManagerHook?.unhook()
                     val pms = param.args[1] as IPackageManager
+                    logD(TAG, "Got pms: $pms")
                     thread {
                         runCatching {
                             UserService.register(pms)
+                            logI(TAG, "User service started")
                         }.onFailure {
+                            logE(TAG, "System service crashed", it)
                         }
                     }
                 }

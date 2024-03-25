@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">Home</string>
+    <string name="title_logs">Logs</string>
     <string name="title_settings">Settings</string>
     <string name="title_template_manage">Template manage</string>
     <string name="title_template_settings">Template settings</string>
@@ -73,6 +74,11 @@
     <string name="app_template_using">Using %d templates</string>
     <string name="app_extra_apps_visible_count">%d additional apps visible</string>
     <string name="app_extra_apps_invisible_count">%d additional apps invisible</string>
+    <!-- Logs -->
+    <string name="logs_save">Save logs</string>
+    <string name="logs_clear">Clear logs</string>
+    <string name="logs_empty">No logs to save</string>
+    <string name="logs_saved">Logs saved</string>
     <!-- Settings -->
     <string name="settings_module">Module</string>
     <string name="settings_data_isolation">Data isolation</string>
@@ -85,6 +91,8 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
+    <string name="settings_detail_log">Detail log for debugging</string>
+    <string name="settings_max_log_size">Logger buffer sizes</string>
     <string name="settings_hide_icon">Hide module icon in launcher</string>
     <string name="settings_hide_icon_summary">You can still open the app in Xposed manager</string>
     <string name="settings_language">Language</string>

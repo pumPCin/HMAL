@@ -8,6 +8,8 @@ import de.robv.android.xposed.XC_MethodHook
 import icu.nullptr.hidemyapplist.common.CommonUtils
 import icu.nullptr.hidemyapplist.common.Constants.*
 import icu.nullptr.hidemyapplist.xposed.HMAService
+import icu.nullptr.hidemyapplist.xposed.logE
+import icu.nullptr.hidemyapplist.xposed.logI
 
 @TargetApi(Build.VERSION_CODES.S)
 class ZygoteArgsHook(private val service: HMAService) : IFrameworkHook {
@@ -22,6 +24,9 @@ class ZygoteArgsHook(private val service: HMAService) : IFrameworkHook {
 
     override fun load() {
         if (!service.config.forceMountData) return
+        logI(TAG, "Load hook")
+        logI(TAG, "App data isolation enabled: $sAppDataIsolationEnabled")
+        logI(TAG, "Vold app data isolation enabled: $sVoldAppDataIsolationEnabled")
         hook = findMethod("android.os.ZygoteProcess") {
             name == "startViaZygote"
         }.hookBefore { param ->
@@ -33,10 +38,12 @@ class ZygoteArgsHook(private val service: HMAService) : IFrameworkHook {
                     if (service.isHookEnabled(app)) {
                         if (sAppDataIsolationEnabled) param.args[param.args.size - 3] = true
                         if (sVoldAppDataIsolationEnabled) param.args[param.args.size - 2] = true
+                        logI(TAG, "@startViaZygote force mount data: $uid $app")
                         return@hookBefore
                     }
                 }
             }.onFailure {
+                logE(TAG, "Fatal error occurred, disable hooks", it)
                 unload()
             }
         }

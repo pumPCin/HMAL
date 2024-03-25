@@ -60,6 +60,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
             return when (key) {
                 "followSystemAccent" -> PrefManager.followSystemAccent
                 "blackDarkTheme" -> PrefManager.blackDarkTheme
+                "detailLog" -> ConfigManager.detailLog
                 "hideIcon" -> PrefManager.hideIcon
                 "appDataIsolation" -> CommonUtils.isAppDataIsolationEnabled
                 "voldAppDataIsolation" -> CommonUtils.isVoldAppDataIsolationEnabled
@@ -73,6 +74,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "language" -> PrefManager.locale
                 "themeColor" -> PrefManager.themeColor
                 "darkTheme" -> PrefManager.darkTheme.toString()
+                "maxLogSize" -> ConfigManager.maxLogSize.toString()
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }
@@ -81,6 +83,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
             when (key) {
                 "followSystemAccent" -> PrefManager.followSystemAccent = value
                 "blackDarkTheme" -> PrefManager.blackDarkTheme = value
+                "detailLog" -> ConfigManager.detailLog = value
                 "forceMountData" -> ConfigManager.forceMountData = value
                 "hideIcon" -> PrefManager.hideIcon = value
                 "appDataIsolation" -> Unit
@@ -94,6 +97,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings), PreferenceFragmen
                 "language" -> PrefManager.locale = value!!
                 "themeColor" -> PrefManager.themeColor = value!!
                 "darkTheme" -> PrefManager.darkTheme = value!!.toInt()
+                "maxLogSize" -> ConfigManager.maxLogSize = value!!.toInt()
                 else -> throw IllegalArgumentException("Invalid key: $key")
             }
         }

@@ -3,6 +3,18 @@
         <item>android</item>
     </string-array>
 
+    <string-array name="max_log_size_entries" translatable="false">
+        <item>256K</item>
+        <item>512K</item>
+        <item>1M</item>
+    </string-array>
+
+    <string-array name="max_log_size_values" translatable="false">
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+    </string-array>
+
     <string-array name="theme_texts" translatable="false">
         <item>@string/dark_theme_off</item>
         <item>@string/dark_theme_on</item>
