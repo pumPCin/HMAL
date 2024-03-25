@@ -96,15 +96,6 @@
                                 android:textAppearance="?textAppearanceBodyMedium"
                                 android:textColor="?colorOnPrimary"
                                 tools:text="@string/home_xposed_service_on" />
-
-                            <com.google.android.material.textview.MaterialTextView
-                                android:id="@+id/filter_count"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:textAppearance="?textAppearanceBodySmall"
-                                android:textColor="?colorOnPrimary"
-                                tools:text="@string/home_xposed_filter_count" />
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
