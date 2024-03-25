@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Verstecke meine Appliste</string>
     <string name="title_home">Start</string>
-    <string name="title_logs">Protokoll</string>
     <string name="title_settings">Einstellungen</string>
     <string name="title_template_manage">Vorlage verwalten</string>
     <string name="title_template_settings">Vorlage Einstellungen</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">System Service läuft [%d]</string>
     <string name="home_xposed_service_off">System Service läuft nicht</string>
     <string name="home_xposed_service_old">Module aktualisiert, Neustart benötigt</string>
-    <string name="home_xposed_filter_count">Verstecke meine Appliste hat insgesamt %d anfragen gefiltert</string>
     <string name="home_manage">Verwalten</string>
-    <string name="home_detection_test">Erkennungstest</string>
-    <string name="home_download_test_app_title">Test App herunterladen</string>
-    <string name="home_download_test_app_message">Wir haben eine individuelle Erkennungstest-App entwickelt und unseren Erkennungstest zu dieser Migriert. Möchtest du sie jetzt herunterladen?</string>
     <string name="home_backup_and_restore">Sichern &amp; Wiederherstellen</string>
     <string name="home_backup_config">Sicherungskonfiguration</string>
     <string name="home_restore_config">Wiederherstellungskonfiguration</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">Sicherungsdatei wurde beschädigt</string>
     <string name="home_export_failed">Export fehlgeschlagen</string>
     <string name="home_exported">Konfiguration gesichert</string>
-    <string name="home_new_update">Neue Aktualisierung verfügbar: %s</string>
-    <string name="home_update">Aktualisierung: %s</string>
     <!-- App select -->
     <string name="list_show_system">System-Apps anzeigen</string>
     <string name="list_sorting">Einstellung</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">Using %d templates</string>
     <string name="app_extra_apps_visible_count">%d additional apps visible</string>
     <string name="app_extra_apps_invisible_count">%d additional apps invisible</string>
-    <!-- Logs -->
-    <string name="logs_save">Save logs</string>
-    <string name="logs_clear">Clear logs</string>
-    <string name="logs_empty">No logs to save</string>
-    <string name="logs_saved">Logs saved</string>
     <!-- Settings -->
     <string name="settings_module">Module</string>
     <string name="settings_data_isolation">Data isolation</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_detail_log">Detail log for debugging</string>
-    <string name="settings_max_log_size">Logger buffer sizes</string>
     <string name="settings_hide_icon">Hide module icon in launcher</string>
     <string name="settings_hide_icon_summary">You can still open the app in Xposed manager</string>
     <string name="settings_language">Language</string>
-    <string name="settings_translate">Participate in translation</string>
-    <string name="settings_translate_summary">Help us translate %s into your language</string>
     <string name="settings_theme">Theme</string>
     <string name="settings_system_theme_color">System theme color</string>
     <string name="settings_theme_color">Theme color</string>
@@ -118,10 +102,6 @@
     <string name="settings_force_clean_env">Reinigung der Laufzeitumgebung erzwingen (Root)</string>
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
-    <string name="settings_update">Update</string>
-    <string name="settings_disable_update">Disable update notification</string>
-    <string name="settings_receive_beta_update">Receive beta update</string>
-    <string name="settings_receive_beta_update_summary">Beta version may be unstable</string>
     <!-- About -->
     <string name="about_description">        Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.
     </string>
@@ -131,7 +111,6 @@
     <string name="about_how_to_use_description_2">        Config modification effective in real time.
     </string>
     <string name="about_developer">Developer</string>
-    <string name="about_support">Support and feedback</string>
     <string name="about_open_source">Open source licenses</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>

@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">Accueil</string>
-    <string name="title_logs">Journal</string>
     <string name="title_settings">Réglages</string>
     <string name="title_template_manage">Gestion des modèles</string>
     <string name="title_template_settings">Réglages du modèle</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">Service système en fonctionnement [%d]</string>
     <string name="home_xposed_service_off">Service système ne fonctionne pas</string>
     <string name="home_xposed_service_old">Module mis à jour, redémarrage nécessaire</string>
-    <string name="home_xposed_filter_count">L\'application a filtré un total de %d requêtes</string>
     <string name="home_manage">Gérer</string>
-    <string name="home_detection_test">Test de détection</string>
-    <string name="home_download_test_app_title">Télécharger l\'appli de test</string>
-    <string name="home_download_test_app_message">Nous avons développé une appli de test de détection séparée and le test de détection dans celle-ci. Voulez-vous la télécharger maintenant?</string>
     <string name="home_backup_and_restore">Sauvegarder &amp; Restaurer</string>
     <string name="home_backup_config">Configurer la sauvegarde</string>
     <string name="home_restore_config">Restaurer la configuration</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">Fichier de sauvegarde est endommagé</string>
     <string name="home_export_failed">Échec de l\'exportation</string>
     <string name="home_exported">Sauvegarder la configuration</string>
-    <string name="home_new_update">Nouvelle mise à jour disponible: %s</string>
-    <string name="home_update">Mise à jour: %s</string>
     <!-- App select -->
     <string name="list_show_system">Afficher les applications du système</string>
     <string name="list_sorting">Trier</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">Utilisation de %d modèle(s)</string>
     <string name="app_extra_apps_visible_count">%d applis additionelles visibles</string>
     <string name="app_extra_apps_invisible_count">%d applis additionelles invisibles</string>
-    <!-- Logs -->
-    <string name="logs_save">Enregistrer le journal</string>
-    <string name="logs_clear">Effacer le journal</string>
-    <string name="logs_empty">Aucun journal à enregistrer</string>
-    <string name="logs_saved">Journeaux sauvegardés</string>
     <!-- Settings -->
     <string name="settings_module">Module</string>
     <string name="settings_data_isolation">Isolation des données</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission refusée</string>
     <string name="settings_force_mount_data">Assurer l\'isolement des données pour toutes les applications</string>
     <string name="settings_force_mount_data_summary">Isolation des données désactivée par défaut pour les applications dont l\'API ciblée est inférieure à 30</string>
-    <string name="settings_detail_log">Journeaux détaillés pour débugguage</string>
-    <string name="settings_max_log_size">Tailles du tampon d\'enregistrement</string>
     <string name="settings_hide_icon">Masquer l\'icône du module dans le lanceur</string>
     <string name="settings_hide_icon_summary">Vous pouvez toujours ouvrir l\'application depuis le gestionnaire Xposed</string>
     <string name="settings_language">Langue</string>
-    <string name="settings_translate">Participer à la traduction</string>
-    <string name="settings_translate_summary">Aidez nous à traduire %s dans votre language</string>
     <string name="settings_theme">Thème</string>
     <string name="settings_system_theme_color">Thème de couleur du système</string>
     <string name="settings_theme_color">Couleur du thème</string>
@@ -118,10 +102,6 @@
     <string name="settings_force_clean_env">Forcer le nettoyage de l\'environnement (racine)</string>
     <string name="settings_force_clean_env_summary">Uniquement si le service du système échoue à démarrer, autrement vous devriez opter pour l\'option ci-dessus.</string>
     <string name="settings_force_clean_env_toast_successful">Environnement d\'exécution nettoyé</string>
-    <string name="settings_update">Mise à jour</string>
-    <string name="settings_disable_update">Désactiver la notification de mise à jour</string>
-    <string name="settings_receive_beta_update">Recevoir les mises à jours beta</string>
-    <string name="settings_receive_beta_update_summary">Les versions Beta pourraient êtres instables</string>
     <!-- About -->
     <string name="about_description">        Bien qu\'il soit incorrect de détecter l\'installation d\'une application spécifique, toutes les applications utilisant la racine ne prennent pas en charge les noms de paquets aléatoires. Dans ce cas, les applications détectées qui utilisent la racine (telles que Fake Location et Storage Isolation) sont égales à la racine détectée elle-même.\n\nDans le même temps, certaines applications intelligentes utilisent diverses failles pour acquérir votre liste d\'applications, afin de vous dessiner un personnage.\n\nCe module fournit quelques méthodes pour tester si vous avez déjà bien caché votre liste d\'applications. De plus, il peut fonctionner comme un module Xposed pour cacher certaines applications ou rejeter les demandes de liste d\'applications afin de protéger votre vie privée.
     </string>
@@ -131,7 +111,6 @@
     <string name="about_how_to_use_description_2">        Modification de la configuration effective en temps réel.
     </string>
     <string name="about_developer">Développeur</string>
-    <string name="about_support">Support et retour d\'expérience</string>
     <string name="about_open_source">Licences open source</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>

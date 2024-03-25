@@ -103,15 +103,12 @@
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
     <!-- About -->
-    <string name="about_description">
-        Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.
+    <string name="about_description">        Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.
     </string>
     <string name="about_how_to_use_title">How to use this module</string>
-    <string name="about_how_to_use_description_1">
-        You can create templates in \"Template manage\".\nThen apply the templates to apps in \"App manage\". (You can also select extra apps for targets.)\nYou should and ONLY should check \"System Framework\" in Xposed module scope / whitelist.
+    <string name="about_how_to_use_description_1">        You can create templates in \"Template manage\".\nThen apply the templates to apps in \"App manage\". (You can also select extra apps for targets.)\nYou should and ONLY should check \"System Framework\" in Xposed module scope / whitelist.
     </string>
-    <string name="about_how_to_use_description_2">
-        Config modification effective in real time.
+    <string name="about_how_to_use_description_2">        Config modification effective in real time.
     </string>
     <string name="about_developer">Developer</string>
     <string name="about_open_source">Open source licenses</string>

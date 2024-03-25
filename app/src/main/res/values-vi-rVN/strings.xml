@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">Ẩn Ứng dụng</string>
     <string name="title_home">Trang chủ</string>
-    <string name="title_logs">Nhật ký</string>
     <string name="title_settings">Cài đặt</string>
     <string name="title_template_manage">Quản lý danh mục</string>
     <string name="title_template_settings">Cài đặt danh mục</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">Dịch vụ HMAL đang chạy [%d]</string>
     <string name="home_xposed_service_off">Dịch vụ HMAL không chạy</string>
     <string name="home_xposed_service_old">Mô đun đã cập nhật, cần khởi động lại máy</string>
-    <string name="home_xposed_filter_count">HMAL đã lọc tổng cộng %d yêu cầu</string>
     <string name="home_manage">Quản lý</string>
-    <string name="home_detection_test">Kiểm thử</string>
-    <string name="home_download_test_app_title">Tải ứng dụng kiểm thử</string>
-    <string name="home_download_test_app_message">Chúng tôi đã phát triển một ứng dụng kiểm tra phát hiện riêng lẻ và chuyển kiểm tra phát hiện sang ứng dụng đó. Bạn có muốn tải xuống bây giờ không?</string>
     <string name="home_backup_and_restore">Sao lưu &amp; Khôi phục</string>
     <string name="home_backup_config">Sao lưu tinh chỉnh</string>
     <string name="home_restore_config">Khôi phục tinh chỉnh</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">Tệp sao lưu đã hư</string>
     <string name="home_export_failed">Lỗi</string>
     <string name="home_exported">Đã sao lưu tinh chỉnh</string>
-    <string name="home_new_update">Bản cập mới có sẵn: %s</string>
-    <string name="home_update">Cập nhật: %s</string>
     <!-- App select -->
     <string name="list_show_system">Hiện ƯD hệ thống</string>
     <string name="list_sorting">Sắp xếp</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">Đang dùng %d mục</string>
     <string name="app_extra_apps_visible_count">Ứng dụng bổ sung hiện hình %d</string>
     <string name="app_extra_apps_invisible_count">Ứng dụng bổ sung vô hình %d</string>
-    <!-- Logs -->
-    <string name="logs_save">Lưu nhật ký</string>
-    <string name="logs_clear">Xóa nhật ký</string>
-    <string name="logs_empty">Ko có nhật ký được lưu</string>
-    <string name="logs_saved">Đã lưu nhật ký</string>
     <!-- Settings -->
     <string name="settings_module">Mô đun</string>
     <string name="settings_data_isolation">Data isolation</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_detail_log">Nhật ký chi tiết gỡ lỗi</string>
-    <string name="settings_max_log_size">Kích cỡ bộ đệm nhật ký</string>
     <string name="settings_hide_icon">Ẩn mô đun trong Trình khởi chạy</string>
     <string name="settings_hide_icon_summary">Bạn vẫn có thể mở ứng dụng trong Xposed</string>
     <string name="settings_language">Ngôn ngữ</string>
-    <string name="settings_translate">Giúp chúng tôi dịch</string>
-    <string name="settings_translate_summary">Giúp chúng tôi dịch %s sang ngôn ngữ của bạn</string>
     <string name="settings_theme">Giao diện</string>
     <string name="settings_system_theme_color">Màu hệ thống</string>
     <string name="settings_theme_color">Màu chủ đề</string>
@@ -118,18 +102,13 @@
     <string name="settings_force_clean_env">Buộc môi trường thời gian chạy sạch (root)</string>
     <string name="settings_force_clean_env_summary">Chỉ khi dịch vụ hệ thống không khởi động được, nếu không bạn nên nhấp vào tùy chọn trên.</string>
     <string name="settings_force_clean_env_toast_successful">Môi trường Runtime đã sạch</string>
-    <string name="settings_update">Cập nhật</string>
-    <string name="settings_disable_update">Tắt thông báo</string>
-    <string name="settings_receive_beta_update">Nhận bản beta</string>
-    <string name="settings_receive_beta_update_summary">Bản beta có thể ko tương thích</string>
     <!-- About -->
     <string name="about_description">Mặc dù việc phát hiện cài đặt ứng dụng cụ thể là không chính xác, nhưng không phải mọi ứng dụng sử dụng root đều cung cấp hỗ trợ tên gói ngẫu nhiên. Trong trường hợp này, các ứng dụng được phát hiện sử dụng quyền root (chẳng hạn như Vị trí giả mạo và Cách ly bộ nhớ) tương đương với chính ứng dụng gốc được phát hiện. \n\n Đồng thời, một số ứng dụng thông minh sử dụng nhiều kẽ hở khác nhau để lấy danh sách ứng dụng của bạn, để nó có thể thu hút một cá tính dành cho bạn. \n\nMô-đun này cung cấp một số phương pháp để kiểm tra xem bạn đã ẩn danh sách ứng dụng của mình hay chưa. Ngoài ra, nó có thể hoạt động như một mô-đun Xposed để ẩn một số ứng dụng hoặc từ chối các yêu cầu danh sách ứng dụng để bảo vệ quyền riêng tư của bạn.
- </string>
+    </string>
     <string name="about_how_to_use_title">Làm sao để dùng mô đun này</string>
     <string name="about_how_to_use_description_1">Bạn có thể tạo danh mục trong \"Quản lý danh mục\". \nSau đó, áp dụng cho các ứng dụng trong \"Quản lý ứng dụng\". (Bạn cũng có thể chọn các ứng dụng bổ sung cho các mục tiêu.) \nBạn nên và CHỈ nên kiểm tra \"Khung hệ thống\" trong phạm vi mô-đun Xposed / danh sách trắng.</string>
     <string name="about_how_to_use_description_2">Sửa đổi cấu hình hiệu quả trong thời gian thực.</string>
     <string name="about_developer">Nhà phát triển</string>
-    <string name="about_support">Giúp và phản hồi</string>
     <string name="about_open_source">Giấy phép nguồn mở</string>
     <!-- Colors -->
     <string name="color_sakura">Anh đào</string>

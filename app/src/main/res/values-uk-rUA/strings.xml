@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">Головна</string>
-    <string name="title_logs">Журнали</string>
     <string name="title_settings">Налаштування</string>
     <string name="title_template_manage">Керування шаблоном</string>
     <string name="title_template_settings">Налаштування шаблону</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">Системна служба працює [%d]</string>
     <string name="home_xposed_service_off">Системна служба не працює</string>
     <string name="home_xposed_service_old">Модуль оновлено, потрібно перезавантажити</string>
-    <string name="home_xposed_filter_count">HMAL відфільтрував %d запитів</string>
     <string name="home_manage">Керувати</string>
-    <string name="home_detection_test">Перевірка на виявлення</string>
-    <string name="home_download_test_app_title">Завантажити додаток для перевірки</string>
-    <string name="home_download_test_app_message">Ми розробили індивідуальний додаток для перевірки виявлення та перенесли перевірку виявлення в нього. Хочете завантажити його зараз?</string>
     <string name="home_backup_and_restore">Резервне копіювання &amp; Відновлення</string>
     <string name="home_backup_config">Налаштування резервного копіювання</string>
     <string name="home_restore_config">Відновити налаштування</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">Файл резервної копії пошкоджено</string>
     <string name="home_export_failed">Не вдалося експортувати</string>
     <string name="home_exported">Створено файл із налаштуваннями модуля</string>
-    <string name="home_new_update">Доступне нове оновлення: %s</string>
-    <string name="home_update">Оновити: %s</string>
     <!-- App select -->
     <string name="list_show_system">Показати системні додатки</string>
     <string name="list_sorting">Сортування</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">Використання %d шаблонів</string>
     <string name="app_extra_apps_visible_count">%d видимі додаткові додатки</string>
     <string name="app_extra_apps_invisible_count">%d невидимі додаткові додатки</string>
-    <!-- Logs -->
-    <string name="logs_save">Зберегти журнали</string>
-    <string name="logs_clear">Очистити журнали</string>
-    <string name="logs_empty">Немає журналів для збереження</string>
-    <string name="logs_saved">Журнали збережено</string>
     <!-- Settings -->
     <string name="settings_module">Модуль</string>
     <string name="settings_data_isolation">Ізоляція даних</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">У дозволі відмовлено</string>
     <string name="settings_force_mount_data">Застосувати ізоляцію даних для всіх додатків</string>
     <string name="settings_force_mount_data_summary">За замовчуванням ізоляція даних вимкнена для цільових API додатків нижче 30</string>
-    <string name="settings_detail_log">Детальний журнал для налагодження</string>
-    <string name="settings_max_log_size">Розміри буфера реєстратора</string>
     <string name="settings_hide_icon">Сховати значок модуля в панелі запуску</string>
     <string name="settings_hide_icon_summary">Ви все ще можете відкрити додаток у менеджері Xposed</string>
     <string name="settings_language">Мова</string>
-    <string name="settings_translate">Участь у перекладі</string>
-    <string name="settings_translate_summary">Допоможіть нам перекласти %s вашою мовою</string>
     <string name="settings_theme">Тема</string>
     <string name="settings_system_theme_color">Колір теми системи</string>
     <string name="settings_theme_color">Колір теми</string>
@@ -118,10 +102,6 @@
     <string name="settings_force_clean_env">Примусово очистити середовище виконання (root)</string>
     <string name="settings_force_clean_env_summary">Лише якщо не вдається запустити системну службу, інакше вам слід натиснути вищезазначену опцію.</string>
     <string name="settings_force_clean_env_toast_successful">Середовище виконання очищено</string>
-    <string name="settings_update">Оновлення</string>
-    <string name="settings_disable_update">Вимкнути сповіщення про оновлення</string>
-    <string name="settings_receive_beta_update">Отримувати бета-оновлення</string>
-    <string name="settings_receive_beta_update_summary">Бета-версія може бути нестабільною</string>
     <!-- About -->
     <string name="about_description">        Незважаючи на те, що виявляти встановлену конкретний додаток неправильно, не кожен додаток, що використовує root, забезпечує підтримку довільних імен пакетів. У цьому випадку виявлені додатки, які використовують root (наприклад, Fake Location and Storage Isolation), дорівнюють самому виявленому root.\n\nУ той же час деякі розумні додатки використовують різні лазівки, щоб отримати ваш список додатків, щоб він міг малювати особистість для вас.\n\nЦей модуль надає деякі методи перевірити, чи добре ви вже приховали свій список додатків. Крім того, він може працювати як модуль Xposed, щоб приховати деякі додатки або відхилити запити списку додатків, щоб захистити вашу конфіденційність.
     </string>
@@ -131,7 +111,6 @@
     <string name="about_how_to_use_description_2">        Модифікація конфігурації діє в режимі реального часу.
     </string>
     <string name="about_developer">Розробник</string>
-    <string name="about_support">Підтримка та зворотний звʼязок</string>
     <string name="about_open_source">Ліцензії з відкритим вихідним кодом</string>
     <!-- Colors -->
     <string name="color_sakura">Сакура</string>

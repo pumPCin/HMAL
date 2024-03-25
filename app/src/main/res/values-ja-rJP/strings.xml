@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">ホーム</string>
-    <string name="title_logs">ログ</string>
     <string name="title_settings">設定</string>
     <string name="title_template_manage">テンプレートの管理</string>
     <string name="title_template_settings">テンプレートの設定</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">システムサービスの実行中 [%d]</string>
     <string name="home_xposed_service_off">システムサービスは実行されていません</string>
     <string name="home_xposed_service_old">モジュールが更新されました。再起動してください。</string>
-    <string name="home_xposed_filter_count">HMAL は合計 %d リクエストをフィルタリングしました</string>
     <string name="home_manage">管理</string>
-    <string name="home_detection_test">検出のテスト</string>
-    <string name="home_download_test_app_title">テストアプリのダウンロード</string>
-    <string name="home_download_test_app_message">個別検知テストアプリを開発し、検知テストを移行しました。 今すぐダウンロードしますか？</string>
     <string name="home_backup_and_restore">バックアップ &amp; リストア</string>
     <string name="home_backup_config">コンフィグのバックアップ</string>
     <string name="home_restore_config">コンフィグのリストア</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">バックアップは破損しています</string>
     <string name="home_export_failed">書き出しの失敗</string>
     <string name="home_exported">バックアップ済みのコンフィグ</string>
-    <string name="home_new_update">利用可能なアップデート: %s</string>
-    <string name="home_update">アップデート: %s</string>
     <!-- App select -->
     <string name="list_show_system">Show system apps</string>
     <string name="list_sorting">並び替え</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">%d テンプレートの使用</string>
     <string name="app_extra_apps_visible_count">%d 個の追加アプリが表示されます</string>
     <string name="app_extra_apps_invisible_count">%d 個の追加アプリが表示されません</string>
-    <!-- Logs -->
-    <string name="logs_save">ログの保存</string>
-    <string name="logs_clear">ログのクリア</string>
-    <string name="logs_empty">保存するログがありません</string>
-    <string name="logs_saved">ログを保存しました</string>
     <!-- Settings -->
     <string name="settings_module">モジュール</string>
     <string name="settings_data_isolation">Data isolation</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_detail_log">デバッグ用詳細ログ</string>
-    <string name="settings_max_log_size">ロガーのバッファサイズ</string>
     <string name="settings_hide_icon">ランチャーでモジュール アイコンを非表示にする</string>
     <string name="settings_hide_icon_summary">Xposedマネージャーで引き続きアプリを開くことができます</string>
     <string name="settings_language">言語</string>
-    <string name="settings_translate">翻訳に参加する</string>
-    <string name="settings_translate_summary">%s をあなたの言語に翻訳するのにご協力ください</string>
     <string name="settings_theme">テーマ</string>
     <string name="settings_system_theme_color">システムのテーマカラー</string>
     <string name="settings_theme_color">テーマカラー</string>
@@ -118,17 +102,12 @@
     <string name="settings_force_clean_env">クリーンなランタイム環境を強制する(root)</string>
     <string name="settings_force_clean_env_summary">システム サービスの開始に失敗した場合のみ、それ以外の場合は上記のオプションをクリックする必要があります。</string>
     <string name="settings_force_clean_env_toast_successful">ランタイムのクリーン</string>
-    <string name="settings_update">アップデート</string>
-    <string name="settings_disable_update">アップデートの通知を無効にする</string>
-    <string name="settings_receive_beta_update">ベータ版アップデートを受け取る</string>
-    <string name="settings_receive_beta_update_summary">ベータ版は不安定な場合があります</string>
     <!-- About -->
     <string name="about_description">特定のアプリのインストールを検出するのは正しくありませんが、ルートを使用するすべてのアプリがランダムなパッケージ名のサポートを提供するわけではありません。  この場合、検出された root を使用するアプリ (Fake Location や Storage Isolation など) は、検出された root 自体と同じです。\n\n同時に、一部のスマート アプリは、さまざまな抜け穴を使用してアプリ リストを取得し、描画できるようにします。 \n\nこのモジュールは、アプリリストを適切に非表示にしているかどうかをテストする方法をいくつか提供します。  また、Xposed モジュールとして機能して、一部のアプリを非表示にしたり、アプリ リストのリクエストを拒否してプライバシーを保護したりできます。</string>
     <string name="about_how_to_use_title">このモジュールの使用方法</string>
     <string name="about_how_to_use_description_1">「テンプレート管理」でテンプレートを作成できます。\n次に、「アプリ管理」でテンプレートをアプリに適用します。 (ターゲットに追加のアプリを選択することもできます。)\nXposed モジュール スコープ/ホワイトリストで「システム フレームワーク」をチェックする必要があります。    </string>
     <string name="about_how_to_use_description_2">リアルタイムで有効な構成変更。    </string>
     <string name="about_developer">デベロッパー</string>
-    <string name="about_support">サポートとフィードバック</string>
     <string name="about_open_source">オープンソースライセンス</string>
     <!-- Colors -->
     <string name="color_sakura">桜</string>

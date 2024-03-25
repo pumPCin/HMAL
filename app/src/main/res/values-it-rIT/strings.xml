@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">HMAL</string>
     <string name="title_home">Home</string>
-    <string name="title_logs">Logs</string>
     <string name="title_settings">Impostazioni</string>
     <string name="title_template_manage">Gestione template</string>
     <string name="title_template_settings">Impostazioni template</string>
@@ -34,11 +33,7 @@
     <string name="home_xposed_service_on">Servizio di sistema in esecuzione [%d]</string>
     <string name="home_xposed_service_off">Servizio di sistema stoppato</string>
     <string name="home_xposed_service_old">Modulo aggiornato, in attesa di riavvio</string>
-    <string name="home_xposed_filter_count">HMAL ha filtrato in totale %d richieste</string>
     <string name="home_manage">Gestisci</string>
-    <string name="home_detection_test">Test di rilevamento</string>
-    <string name="home_download_test_app_title">Scarica app di test</string>
-    <string name="home_download_test_app_message">Abbiamo sviluppato un\'app di test di rilevamento individuale e su di essa abbiamo migrato il test di rilevamento. Vuoi scaricarla adesso?</string>
     <string name="home_backup_and_restore">Indietro &amp; Ripristina</string>
     <string name="home_backup_config">Backup configurazione</string>
     <string name="home_restore_config">Ripristina configurazione</string>
@@ -49,8 +44,6 @@
     <string name="home_import_file_damaged">File di backup danneggiato</string>
     <string name="home_export_failed">Export fallito</string>
     <string name="home_exported">Configurazione salvata</string>
-    <string name="home_new_update">Nuovo aggiornamento disponibile: %s</string>
-    <string name="home_update">Aggiornamento: %s</string>
     <!-- App select -->
     <string name="list_show_system">Mostra app di sistema</string>
     <string name="list_sorting">Ordinamento</string>
@@ -80,11 +73,6 @@
     <string name="app_template_using">%d template in uso</string>
     <string name="app_extra_apps_visible_count">%d ulteriori app visibili</string>
     <string name="app_extra_apps_invisible_count">%d ulteriori app invisibili</string>
-    <!-- Logs -->
-    <string name="logs_save">Salva log</string>
-    <string name="logs_clear">Cancella log</string>
-    <string name="logs_empty">Nessun log da salvare</string>
-    <string name="logs_saved">Log salvati</string>
     <!-- Settings -->
     <string name="settings_module">Modulo</string>
     <string name="settings_data_isolation">Isolamento dati</string>
@@ -97,13 +85,9 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_detail_log">Log dettagliato per debugging</string>
-    <string name="settings_max_log_size">Dimensione buffer log</string>
     <string name="settings_hide_icon">Nascondi icona modulo nel launcher</string>
     <string name="settings_hide_icon_summary">Puoi sempre aprire l\'app in Xposed manager</string>
     <string name="settings_language">Lingua</string>
-    <string name="settings_translate">Aiuta a tradurre</string>
-    <string name="settings_translate_summary">Aiutaci a tradurre %s nella tua lingua</string>
     <string name="settings_theme">Tema</string>
     <string name="settings_system_theme_color">Colore tema di sistema</string>
     <string name="settings_theme_color">Colore tema</string>
@@ -118,11 +102,7 @@
     <string name="settings_force_clean_env">Forza pulizia ambiente runtime (root)</string>
     <string name="settings_force_clean_env_summary">Solo se il servizio di sistema non riesce ad avviarsi, altrimenti devi cliccare l\'opzione sopra.</string>
     <string name="settings_force_clean_env_toast_successful">Ambiente runtime pulito</string>
-    <string name="settings_update">Aggiorna</string>
-    <string name="settings_disable_update">Disabilita notifiche di aggiornamento</string>
-    <string name="settings_receive_beta_update">Ricevi aggiornamenti beta</string>
-    <string name="settings_receive_beta_update_summary">La versione beta potrebbe essere instabile</string>
-    <!-- About -->
+   <!-- About -->
     <string name="about_description">        Sebbene non sia corretto rilevare l\'installazione di app specifiche, non tutte le app che utilizzano il root forniscono supporto per nome pacchetto casuale. In questo caso, le app rilevate che utilizzano root (come Fake Location e Storage Isolation) sono uguali al rilevamento del root stesso.\n\nAllo stesso tempo, alcune app intelligenti utilizzano varie scappatoie per acquisire il tuo elenco di app, in modo che possano impersonare un profilo per te.\n\nQuesto modulo fornisce alcuni metodi per verificare se hai già nascosto al meglio la tua lista di applicazioni. Inoltre, può funzionare come modulo Xposed per nascondere alcune app o rifiutare le richieste dell\'elenco di app per proteggere la tua privacy.
     </string>
     <string name="about_how_to_use_title">Come usare questo modulo</string>
@@ -131,7 +111,6 @@
     <string name="about_how_to_use_description_2">        Modifiche alla configurazione sono effettive in tempo reale.
     </string>
     <string name="about_developer">Sviluppatore</string>
-    <string name="about_support">Supporto e feedback</string>
     <string name="about_open_source">Licenze open source</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>
