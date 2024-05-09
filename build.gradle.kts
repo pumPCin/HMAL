@@ -28,7 +28,7 @@ val buildToolsVer by extra("34.0.0")
 
 val appVerName by extra("4.0")
 val configVerCode by extra(90)
-val serviceVerCode by extra(96)
+val serviceVerCode by extra(98)
 val minBackupVerCode by extra(65)
 
 val androidSourceCompatibility = JavaVersion.VERSION_17

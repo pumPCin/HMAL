@@ -26,7 +26,7 @@ com-drakeet-multitype = { module = "com.drakeet.multitype:multitype", version = 
 com-github-kirich1409-viewbindingpropertydelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate", version = "1.5.9" }
 com-github-kyuubiran-ezxhelper = { module = "com.github.kyuubiran:EzXHelper", version = "1.0.3" }
 com-github-topjohnwu-libsu-core = { module = "com.github.topjohnwu.libsu:core", version = "5.2.2" }
-com-google-android-material = { module = "com.google.android.material:material", version = "1.11.0" }
+com-google-android-material = { module = "com.google.android.material:material", version = "1.12.0" }
 de-robv-android-xposed-api = { module = "de.robv.android.xposed:api", version = "82" }
 dev-rikka-hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "hidden-api" }
 dev-rikka-hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }
