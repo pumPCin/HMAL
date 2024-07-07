@@ -22,7 +22,10 @@ updates:
     directory: /
     schedule:
       interval: daily
-
+ 
+  - name: Make gradlew executable
+    run: chmod +x ./gradlew
+    
 registries:
   maven-google:
     type: maven-repository
