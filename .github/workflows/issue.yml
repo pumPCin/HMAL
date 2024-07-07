@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Check title and version requirement
       if: github.event_name == 'issues'
-      uses: actions/github-script@v6.2.0
+      uses: actions/github-script@v7.0.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
@@ -60,7 +60,7 @@ jobs:
           });
     - name: Close spam and invalid
       if: github.event_name == 'issues'
-      uses: actions/github-script@v6.2.0
+      uses: actions/github-script@v7.0.1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
