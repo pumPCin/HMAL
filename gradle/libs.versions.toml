@@ -1,6 +1,6 @@
 [versions]
-agp = "8.3.2"
-kotlin = "1.9.23"
+agp = "8.5.0"
+kotlin = "2.0.0"
 nav = "2.7.7"
 hidden-api = "4.3.3"
 
@@ -9,7 +9,7 @@ agp-app = { id = "com.android.application", version.ref = "agp" }
 agp-lib = { id = "com.android.library", version.ref = "agp" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version = "1.9.23-1.0.19" }
+ksp = { id = "com.google.devtools.ksp", version = "2.0.0-1.0.22" }
 nav-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav" }
 autoresconfig = { id = "dev.rikka.tools.autoresconfig", version = "1.2.2" }
 materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.4.1" }
@@ -24,13 +24,13 @@ com-android-tools-build-apksig = { module = "com.android.tools.build:apksig", ve
 com-drakeet-about = { module = "com.drakeet.about:about", version = "2.5.2" }
 com-drakeet-multitype = { module = "com.drakeet.multitype:multitype", version = "4.3.0" }
 com-github-kirich1409-viewbindingpropertydelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate", version = "1.5.9" }
-com-github-kyuubiran-ezxhelper = { module = "com.github.kyuubiran:EzXHelper", version = "1.0.3" }
-com-github-topjohnwu-libsu-core = { module = "com.github.topjohnwu.libsu:core", version = "5.2.2" }
+com-github-kyuubiran-ezxhelper = { module = "com.github.kyuubiran:EzXHelper", version = "2.2.0" }
+com-github-topjohnwu-libsu-core = { module = "com.github.topjohnwu.libsu:core", version = "6.0.0" }
 com-google-android-material = { module = "com.google.android.material:material", version = "1.12.0" }
 de-robv-android-xposed-api = { module = "de.robv.android.xposed:api", version = "82" }
 dev-rikka-hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "hidden-api" }
 dev-rikka-hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }
 dev-rikka-rikkax-material = { module = "dev.rikka.rikkax.material:material", version = "2.7.0" }
 dev-rikka-rikkax-material-preference = { module = "dev.rikka.rikkax.material:material-preference", version = "2.0.0" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.3" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.7.1" }
 me-zhanghai-android-appiconloader = { module = "me.zhanghai.android.appiconloader:appiconloader", version = "1.5.0" }
