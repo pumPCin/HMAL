@@ -4,13 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.text.Html
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.result.contract.ActivityResultContracts.CreateDocument
-import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -20,7 +17,6 @@ import com.google.android.hmal.R
 import com.google.android.hmal.databinding.FragmentHomeBinding
 import icu.nullptr.hidemyapplist.hmaApp
 import icu.nullptr.hidemyapplist.service.ConfigManager
-import icu.nullptr.hidemyapplist.service.PrefManager
 import icu.nullptr.hidemyapplist.service.ServiceClient
 import icu.nullptr.hidemyapplist.ui.activity.AboutActivity
 import icu.nullptr.hidemyapplist.ui.util.ThemeUtils.getColor
@@ -28,9 +24,6 @@ import icu.nullptr.hidemyapplist.ui.util.ThemeUtils.themeColor
 import icu.nullptr.hidemyapplist.ui.util.makeToast
 import icu.nullptr.hidemyapplist.ui.util.navController
 import icu.nullptr.hidemyapplist.ui.util.setupToolbar
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import java.io.IOException
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
