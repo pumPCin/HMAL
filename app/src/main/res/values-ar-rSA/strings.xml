@@ -76,7 +76,7 @@
     <!-- Settings -->
     <string name="settings_module">الوحدة</string>
     <string name="settings_data_isolation">عزل البيانات</string>
-    <string name="settings_data_isolation_summary">App data: %s\nVold app data: %s\nForce mount: %s</string>
+    <string name="settings_data_isolation_summary" formatted="false">App data: %s\nVold app data: %s\nForce mount: %s</string>
     <string name="settings_data_isolation_unsupported">هذا الخِيار متاح فقط في إصدارات Android 11 فأعلي</string>
     <string name="settings_app_data_isolation">عزل بيانات التطبيق</string>
     <string name="settings_vold_app_data_isolation">فرض عزل بيانات التطبيق</string>

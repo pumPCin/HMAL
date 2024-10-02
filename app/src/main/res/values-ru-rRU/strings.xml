@@ -76,7 +76,7 @@
     <!-- Settings -->
     <string name="settings_module">Модуль</string>
     <string name="settings_data_isolation">Изоляция данных</string>
-    <string name="settings_data_isolation_summary">Данных приложения: %s\nПринудительная данных приложения: %s\nПринудительное монтирование: %s</string>
+    <string name="settings_data_isolation_summary" formatted="false">Данных приложения: %s\nПринудительная данных приложения: %s\nПринудительное монтирование: %s</string>
     <string name="settings_data_isolation_unsupported">Это опция доступна только на Android 11 и выше</string>
     <string name="settings_app_data_isolation">Изоляция данных приложений</string>
     <string name="settings_vold_app_data_isolation">Принудительная изоляция данных приложений</string>

@@ -76,7 +76,7 @@
     <!-- Settings -->
     <string name="settings_module">Modulo</string>
     <string name="settings_data_isolation">Isolamento dati</string>
-    <string name="settings_data_isolation_summary">App data: %s\nVold app data: %s\nForce mount: %s</string>
+    <string name="settings_data_isolation_summary" formatted="false">App data: %s\nVold app data: %s\nForce mount: %s</string>
     <string name="settings_data_isolation_unsupported">Questa opzione è disponibile solamente per Android 11 e superiori</string>
     <string name="settings_app_data_isolation">App data isolation</string>
     <string name="settings_vold_app_data_isolation">Vold app data isolation</string>

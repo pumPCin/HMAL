@@ -76,7 +76,7 @@
     <!-- Settings -->
     <string name="settings_module">模塊</string>
     <string name="settings_data_isolation">資料隔離</string>
-    <string name="settings_data_isolation_summary">App data：%s\nVold app data：%s\n強制掛載：%s</string>
+    <string name="settings_data_isolation_summary" formatted="false">App data：%s\nVold app data：%s\n強制掛載：%s</string>
     <string name="settings_data_isolation_unsupported">該選項僅適用於 Android 11 或更低版本的系統</string>
     <string name="settings_app_data_isolation">App data 隔離</string>
     <string name="settings_vold_app_data_isolation">Vold app data 隔離</string>
