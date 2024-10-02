@@ -1,5 +1,5 @@
-name: Bug report/反馈 Bug
-description: Report errors or unexpected behavior./反馈错误或异常行为。
+name: Bug report
+description: Report errors or unexpected behavior.
 labels: [bug]
 title: "[Bug] "
 body:
@@ -11,13 +11,9 @@ body:
         To prevent spam, please fill in the title after "[Bug]".
 
         To make it easier for us to help you please enter detailed information below.
-        
-        感谢给 HMAL 汇报问题！
-        为了使我们更好地帮助你，请提供以下信息。
-        为了防止重复汇报与垃圾信息，标题请务必使用英文，在“[Bug]”之后填写内容。
   - type: textarea
     attributes:
-      label: Steps to reproduce/复现步骤
+      label: Steps to reproduce
       placeholder: |
         1. 
         2. 
@@ -26,62 +22,62 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Expected behaviour/预期行为
-      placeholder: Tell us what should happen/正常情况下应该发生什么
+      label: Expected behaviour
+      placeholder: Tell us what should happen
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Actual behaviour/实际行为
-      placeholder: Tell us what happens instead/实际上发生了什么
+      label: Actual behaviour
+      placeholder: Tell us what happens instead
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Xposed Module List/Xposed 模块列表
+      label: Xposed Module List
       render: Shell
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Magisk Module List/Magisk 模块列表
+      label: Magisk Module List
       render: Shell
     validations:
       required: true
   - type: input
     attributes:
-      label: HMAL version/HMAL 版本
-      description:  Please check [Actions](https://github.com/pumPCin/HMAL/actions/workflows/main.yml) for the latest CI debug build. Don't just type "latest". Specify actual version (**MUST** contains `.rXXX.XXX-debug`), otherwise your issue will be closed./请前往 [Actions](https://github.com/pumPCin/HMAL/actions/workflows/main.yml) 获取最新的 CI debug 版本。不要直接填用“最新版”。版本号**必须**包含 `·rXXX.XXX-debug`，否则 issue 会被自动关闭。
+      label: HMAL version/HMAL
+      description:  Please check [Actions](https://github.com/pumPCin/HMAL/actions/workflows/main.yml) for the latest CI debug build. Don't just type "latest". Specify actual version (**MUST** contains `.rXXX.XXX-debug`), otherwise your issue will be closed.
       placeholder: V_._._(-Beta).r___._______-debug
     validations:
       required: true
   - type: input
     attributes:
-      label: Android version/Android 版本
+      label: Android version
     validations:
       required: true
   - type: input
     attributes:
-      label: Magisk version/Magisk 版本
+      label: Magisk version
     validations:
       required: true
   - type: dropdown
     id: latest
     attributes:
-      label: Version requirement/版本要求
-      description: Select the version being used for feedback./选择反馈时正使用的版本。
+      label: Version requirement
+      description: Select the version being used for feedback.
       multiple: false
       options:
-        - Latest CI debug build/最新 CI debug 构建
-        - Version required by the developer/开发者要求的版本
-        - Public release/beta version/公开发布/测试版
-        - Other/其他
+        - Latest CI debug build
+        - Version required by the developer
+        - Public release/beta version
+        - Other
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Logs/日志
-      description: For usage issues, please provide the log zip saved from manager; for activation issues, please provide [bugreport](https://developer.android.com/studio/debug/bug-report). Without log, the issue will be closed. /使用问题请提供从管理器保存的日志压缩包；激活问题请提供 [bugreport](https://developer.android.google.cn/studio/debug/bug-report?hl=zh-cn) 日志。无日志提交会被关闭。
-      placeholder: Upload logs by clicking the bar on the bottom. /点击文本框底栏上传日志文件。
+      label: Logs
+      description: For usage issues, please provide the log zip saved from manager; for activation issues, please provide [bugreport](https://developer.android.com/studio/debug/bug-report). Without log, the issue will be closed.
+      placeholder: Upload logs by clicking the bar on the bottom.
     validations:
       required: true

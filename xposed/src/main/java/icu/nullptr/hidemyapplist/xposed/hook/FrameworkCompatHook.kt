@@ -1,38 +1,37 @@
 package icu.nullptr.hidemyapplist.xposed.hook
 
 import android.annotation.TargetApi
+import android.content.pm.ApplicationInfo
 import android.os.Build
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
 import de.robv.android.xposed.XC_MethodHook
 import icu.nullptr.hidemyapplist.common.CommonUtils
-import icu.nullptr.hidemyapplist.common.Constants.*
 import icu.nullptr.hidemyapplist.xposed.HMAService
 
 @TargetApi(Build.VERSION_CODES.S)
-class ZygoteArgsHook(private val service: HMAService) : IFrameworkHook {
+class PlatformCompatHook(private val service: HMAService) : IFrameworkHook {
 
     companion object {
         private const val TAG = "HMAL-ZAH"
         private val sAppDataIsolationEnabled = CommonUtils.isAppDataIsolationEnabled
-        private val sVoldAppDataIsolationEnabled = CommonUtils.isVoldAppDataIsolationEnabled
     }
 
     private var hook: XC_MethodHook.Unhook? = null
 
     override fun load() {
         if (!service.config.forceMountData) return
-        hook = findMethod("android.os.ZygoteProcess") {
-            name == "startViaZygote"
+        hook = findMethod("com.android.server.compat.PlatformCompat") {
+            name == "isChangeEnabled"
         }.hookBefore { param ->
             runCatching {
-                val uid = param.args[2] as Int
-                if (uid == UID_SYSTEM) return@hookBefore
-                val apps = service.pms.getPackagesForUid(uid) ?: return@hookBefore
+                val changeId = param.args[0] as Long
+                val appInfo = param.args[1] as ApplicationInfo
+                if (changeId.toInt() != 143937733) return@hookBefore
+                val apps = service.pms.getPackagesForUid(appInfo.uid) ?: return@hookBefore
                 for (app in apps) {
                     if (service.isHookEnabled(app)) {
-                        if (sAppDataIsolationEnabled) param.args[20] = true // boolean bindMountAppsData
-                        if (sVoldAppDataIsolationEnabled) param.args[21] = true // boolean bindMountAppStorageDirs
+                        if (sAppDataIsolationEnabled) param.result = true
                         return@hookBefore
                     }
                 }

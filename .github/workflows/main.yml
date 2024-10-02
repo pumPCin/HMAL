@@ -29,11 +29,11 @@ jobs:
       - name: Gradle wrapper validation
         uses: gradle/wrapper-validation-action@v3
 
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '21'
 
       - name: Write key
         if: github.event_name != 'pull_request'
@@ -65,7 +65,7 @@ jobs:
       - name: Build release
         id: buildRelease
         run: |
-          ./gradlew --info :app:buildRelease
+          ./gradlew :app:buildRelease
           echo "releaseName=$(ls app/build/apk/release/HMAL*.apk | awk -F '(/|.apk)' '{print $5}')" >> $GITHUB_OUTPUT
 
       - name: Upload release

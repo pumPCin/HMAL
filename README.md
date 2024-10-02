@@ -1,4 +1,4 @@
-# HMAL
+# HMAL (fork of Hide My Applist https://github.com/Dr-TSNG/Hide-My-Applist)
 
 ![banner](banner.png)
 
