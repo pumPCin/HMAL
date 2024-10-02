@@ -49,7 +49,7 @@ object UserService {
         val service = HMAService(pms)
         appUid = Utils.getPackageUidCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
         val appPackage = Utils.getPackageInfoCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
-        if (!Utils.verifyAppSignature(appPackage.applicationInfo.sourceDir)) {
+        if (!Utils.verifyAppSignature(appPackage.applicationInfo?.sourceDir.toString())) {
             return
         }
 
