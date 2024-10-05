@@ -13,7 +13,7 @@ import icu.nullptr.hidemyapplist.xposed.HMAService
 class PlatformCompatHook(private val service: HMAService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "HMAL-ZAH"
+        private const val TAG = "HMAL-PCH"
         private val sAppDataIsolationEnabled = CommonUtils.isAppDataIsolationEnabled
     }
 

@@ -1,7 +1,7 @@
 [versions]
-agp = "8.6.1"
+agp = "8.7.0"
 kotlin = "2.0.20"
-nav = "2.8.1"
+nav = "2.8.2"
 hidden-api = "4.3.3"
 
 [plugins]
@@ -12,7 +12,7 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 ksp = { id = "com.google.devtools.ksp", version = "2.0.20-1.0.25" }
 nav-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav" }
 autoresconfig = { id = "dev.rikka.tools.autoresconfig", version = "1.2.2" }
-materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.4.1" }
+materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.5.1" }
 refine = { id = "dev.rikka.tools.refine", version = "4.4.0" }
 
 [libraries]
@@ -30,7 +30,7 @@ com-google-android-material = { module = "com.google.android.material:material",
 de-robv-android-xposed-api = { module = "de.robv.android.xposed:api", version = "82" }
 dev-rikka-hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "hidden-api" }
 dev-rikka-hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }
-dev-rikka-rikkax-material = { module = "dev.rikka.rikkax.material:material", version = "2.7.0" }
+dev-rikka-rikkax-material = { module = "dev.rikka.rikkax.material:material", version = "2.7.2" }
 dev-rikka-rikkax-material-preference = { module = "dev.rikka.rikkax.material:material-preference", version = "2.0.0" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.7.3" }
 me-zhanghai-android-appiconloader = { module = "me.zhanghai.android.appiconloader:appiconloader", version = "1.5.0" }
