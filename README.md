@@ -1,8 +1,8 @@
-# HMAL (fork from https://github.com/Dr-TSNG/Hide-My-Applist)
+# HMAL (Hide My AppList)
 
 ![banner](banner.png)
 
-## About this Xposed (LSPosed) module app
+## About this Xposed (LSPosed) module app (fork from https://github.com/Dr-TSNG/Hide-My-Applist)
 
 Although it's bad practice to detect the installation of specific apps, not every app using root provides random package name support. In this case, if apps related to root (such as Fake Location and Storage Isolation) are detected, it is tantamount to detecting that the device is rooted.
 
