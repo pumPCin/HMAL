@@ -8,3 +8,5 @@ updates:
       maven:
         patterns:
           - "*"
+    ignore:
+          - dependency-name: "com.github.kyuubiran:EzXHelper"
