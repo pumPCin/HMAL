@@ -3,7 +3,9 @@ name: Main
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: 
+      - master
+      - test
     paths-ignore:
       - '.github/ISSUE_TEMPLATE/**'
       - '.github/workflows/issue.yml'
