@@ -9,7 +9,7 @@ import icu.nullptr.hidemyapplist.util.PackageHelper
 class AppChangeReceiver : BroadcastReceiver() {
 
     companion object {
-        private const val TAG = "AppChangeReceiver"
+        private const val TAG = "ACR"
 
         private val actions = setOf(
             Intent.ACTION_PACKAGE_ADDED,
