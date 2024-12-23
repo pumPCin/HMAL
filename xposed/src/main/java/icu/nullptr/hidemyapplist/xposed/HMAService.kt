@@ -34,8 +34,11 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
     }
 
     private fun searchDataDir() {
-        File("/data/system/hide_my_applist*").deleteRecursively()
-        File("/data/system/h_m_a_l_*").deleteRecursively()
+        File("/data/system").list()?.forEach {
+            if (it.startsWith("hide_my_applist") || it.startsWith("h_m_a_l_")) {
+                    File("/data/system/$it").deleteRecursively()
+            }
+        }
         File("/data/misc").list()?.forEach {
             if (it.startsWith("hma1-")) {
                 if (!this::dataDir.isInitialized) {
