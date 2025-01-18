@@ -8,8 +8,8 @@ Additionally, some apps use various loopholes to acquire your app list, in order
 This module can work as an Xposed module to hide apps or reject app list requests, and provides some methods to test whether you have hidden your app list properly.
 
 ## Fork differences with the original module HMA
-Removed: Google Services, ads, logcat logs, filtered counters, network activity.
-Changed: Package name, log filename, other little things in UI.
+- Removed: Google Services, ads, logcat logs, filtered counters, network activity.
+- Changed: Package name, log filename, other little things in UI.
 
 ## Guide
 https://github.com/mModule/guide_hma
