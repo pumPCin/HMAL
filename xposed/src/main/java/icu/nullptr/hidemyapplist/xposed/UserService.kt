@@ -48,11 +48,6 @@ object UserService {
     fun register(pms: IPackageManager) {
         val service = HMAService(pms)
         appUid = Utils.getPackageUidCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
-        val appPackage = Utils.getPackageInfoCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
-        if (!Utils.verifyAppSignature(appPackage.applicationInfo?.sourceDir.toString())) {
-            return
-        }
-
         waitSystemService("activity")
         ActivityManagerApis.registerUidObserver(
             uidObserver,

@@ -14,6 +14,7 @@ class PlatformCompatHook(private val service: HMAService) : IFrameworkHook {
 
     companion object {
         private const val TAG = "HMAL-PCH"
+        private val sVoldAppDataIsolationEnabled = CommonUtils.isVoldAppDataIsolationEnabled
         private val sAppDataIsolationEnabled = CommonUtils.isAppDataIsolationEnabled
     }
 
@@ -32,6 +33,10 @@ class PlatformCompatHook(private val service: HMAService) : IFrameworkHook {
                 for (app in apps) {
                     if (service.isHookEnabled(app)) {
                         if (sAppDataIsolationEnabled) param.result = true
+                        if (service.isVoldEnabled(app)) param.args[21] = true
+
+                        val bindMountAppStorageDirs = param.args[21] as Boolean
+
                         return@hookBefore
                     }
                 }

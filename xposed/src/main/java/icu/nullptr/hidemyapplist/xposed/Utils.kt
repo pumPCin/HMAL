@@ -9,7 +9,6 @@ import com.android.apksig.ApkVerifier
 import com.github.kyuubiran.ezxhelper.utils.findField
 import com.github.kyuubiran.ezxhelper.utils.invokeMethodAutoAs
 import de.robv.android.xposed.XposedHelpers
-import icu.nullptr.hidemyapplist.Magic
 import java.io.File
 import java.util.*
 
@@ -25,10 +24,6 @@ object Utils {
             buffer.append(randomLimitedInt.toChar())
         }
         return buffer.toString()
-    }
-
-    fun verifyAppSignature(path: String): Boolean {
-        return true
     }
 
     fun getRecursiveField(entry: Any, list: List<String>): Any? {

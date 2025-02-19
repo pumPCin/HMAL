@@ -94,6 +94,12 @@ class HMAService(val pms: IPackageManager) : IHMAService.Stub() {
         frameworkHooks.forEach(IFrameworkHook::load)
     }
 
+    fun isVoldEnabled(packageName: String) : Boolean {
+        val appConfig = config.scope[packageName] ?: return false
+        var disableVold = appConfig.disableVold ?: return false
+        return disableVold
+    }
+
     fun isHookEnabled(packageName: String) = config.scope.containsKey(packageName)
 
     fun shouldHide(caller: String?, query: String?): Boolean {
