@@ -15,7 +15,7 @@
         <SwitchPreference
             android:icon="@drawable/outline_settings_24"
             android:key="disableVold"
-            android:title="@string/app_disable_vold" />
+            android:title="Disable vold isolation" />
         <SwitchPreference
             android:icon="@drawable/outline_settings_24"
             android:key="useWhiteList"
