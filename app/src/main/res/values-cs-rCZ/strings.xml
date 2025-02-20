@@ -28,7 +28,7 @@
     <string name="search">Hledat</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modul aktivní [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Modul aktivní [%s-%d]</string>
     <string name="home_xposed_not_activated">Modul není aktivován</string>
     <string name="home_xposed_service_on">Systémová služba běží [%d]</string>
     <string name="home_xposed_service_off">Systémová služba neběží</string>

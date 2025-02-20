@@ -28,7 +28,7 @@
     <string name="search">بحث</string>
     <string name="system">النظام</string>
     <!-- Home -->
-    <string name="home_xposed_activated">الوحـدة مفعـلة [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">الوحـدة مفعـلة [%s-%d]</string>
     <string name="home_xposed_not_activated">الوحـدة غير مفعـلة</string>
     <string name="home_xposed_service_on">خدمـة النظـام تعمـل [%d]</string>
     <string name="home_xposed_service_off">خدمـة النظـام متوقفة</string>

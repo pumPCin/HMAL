@@ -28,7 +28,7 @@
     <string name="search">Wyszukaj</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Moduł aktywowany [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Moduł aktywowany [%s-%d]</string>
     <string name="home_xposed_not_activated">Moduł nie aktywowany</string>
     <string name="home_xposed_service_on">Uruchomiona usługa systemowa [%d]</string>
     <string name="home_xposed_service_off">Usługa systemowa nie działa</string>

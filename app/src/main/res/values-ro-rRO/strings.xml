@@ -28,7 +28,7 @@
     <string name="search">Căutare</string>
     <string name="system">Sistem</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modul Activat</string>
+    <string name="home_xposed_activated" formatted="false">Modul Activat</string>
     <string name="home_xposed_not_activated">Modul Dezactivat</string>
     <string name="home_xposed_service_on">Serviciul de sistem rulează</string>
     <string name="home_xposed_service_off">Serviciul de sistem nu funcționează</string>

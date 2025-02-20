@@ -28,7 +28,7 @@
     <string name="search">Tìm</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Mô đun đã kích hoạt [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Mô đun đã kích hoạt [%s-%d]</string>
     <string name="home_xposed_not_activated">Mô đun ko kích hoạt</string>
     <string name="home_xposed_service_on">Dịch vụ HMAL đang chạy [%d]</string>
     <string name="home_xposed_service_off">Dịch vụ HMAL không chạy</string>

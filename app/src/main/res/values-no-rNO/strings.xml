@@ -28,7 +28,7 @@
     <string name="search">Søk</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modul aktivert [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Modul aktivert [%s-%d]</string>
     <string name="home_xposed_not_activated">Modul ikke aktivert</string>
     <string name="home_xposed_service_on">System service funker [%d]</string>
     <string name="home_xposed_service_off">System service funker ikke</string>

@@ -28,7 +28,7 @@
     <string name="search">Rechercher</string>
     <string name="system">Système</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Module Actif [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Module Actif [%s-%d]</string>
     <string name="home_xposed_not_activated">Module Inactivé</string>
     <string name="home_xposed_service_on">Service système en fonctionnement [%d]</string>
     <string name="home_xposed_service_off">Service système ne fonctionne pas</string>

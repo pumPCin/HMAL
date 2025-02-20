@@ -28,7 +28,7 @@
     <string name="search">Ara</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modül Aktif [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Modül Aktif [%s-%d]</string>
     <string name="home_xposed_not_activated">Modül Aktif Değil</string>
     <string name="home_xposed_service_on">Sistem hizmeti çalışıyor [%d]</string>
     <string name="home_xposed_service_off">Sistem servisi çalışmıyor</string>

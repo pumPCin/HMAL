@@ -28,7 +28,7 @@
     <string name="search">Поиск</string>
     <string name="system">Система</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Модуль активирован [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Модуль активирован [%s-%d]</string>
     <string name="home_xposed_not_activated">Модуль не активирован</string>
     <string name="home_xposed_service_on">Системная служба работает [%d]</string>
     <string name="home_xposed_service_off">Системная служба не работает</string>
