@@ -10,7 +10,7 @@ val serviceVerCode: Int by rootProject.extra
 val minBackupVerCode: Int by rootProject.extra
 
 android {
-    namespace = "icu.nullptr.hidemyapplist.common"
+    namespace = "com.android.hmal.common"
 
     buildFeatures {
         aidl = true

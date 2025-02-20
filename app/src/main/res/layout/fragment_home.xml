@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="icu.nullptr.hidemyapplist.ui.fragment.HomeFragment">
+    tools:context="com.android.hmal.ui.fragment.HomeFragment">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                             android:text="@string/home_manage"
                             android:textAppearance="?textAppearanceTitleMedium" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <com.android.hmal.ui.view.ListItemView
                             android:id="@+id/template_manage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
 
                         <include layout="@layout/line" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <com.android.hmal.ui.view.ListItemView
                             android:id="@+id/app_manage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                             android:text="@string/home_backup_and_restore"
                             android:textAppearance="?textAppearanceTitleMedium" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <com.android.hmal.ui.view.ListItemView
                             android:id="@+id/backup_config"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
 
                         <include layout="@layout/line" />
 
-                        <icu.nullptr.hidemyapplist.ui.view.ListItemView
+                        <com.android.hmal.ui.view.ListItemView
                             android:id="@+id/restore_config"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
