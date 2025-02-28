@@ -28,7 +28,7 @@
     <string name="search">Search</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">モジュールは有効です [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">モジュールは有効です [%s-%d]</string>
     <string name="home_xposed_not_activated">モジュールは無効です</string>
     <string name="home_xposed_service_on">システムサービスの実行中 [%d]</string>
     <string name="home_xposed_service_off">システムサービスは実行されていません</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_hide_icon">ランチャーでモジュール アイコンを非表示にする</string>
-    <string name="settings_hide_icon_summary">Xposedマネージャーで引き続きアプリを開くことができます</string>
+    <string name="settings_ihide_icon">ランチャーでモジュール アイコンを非表示にする</string>
+    <string name="settings_ihide_icon_summary">Xposedマネージャーで引き続きアプリを開くことができます</string>
     <string name="settings_language">言語</string>
     <string name="settings_theme">テーマ</string>
     <string name="settings_system_theme_color">システムのテーマカラー</string>

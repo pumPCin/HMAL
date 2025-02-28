@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">隐藏应用列表</string>
+    <string name="app_name">HMAL</string>
     <string name="title_home">首页</string>
     <string name="title_settings">设置</string>
     <string name="title_template_manage">模板管理</string>
@@ -9,7 +9,7 @@
     <string name="title_app_select">选择应用</string>
     <string name="title_app_settings">应用配置</string>
     <string name="title_about">关于</string>
-    <string name="do_not_dual">请勿多开或将隐藏应用列表安装到其他用户</string>
+    <string name="do_not_dual">请勿多开或将HMAL安装到其他用户</string>
     <string name="show_crash_log">显示崩溃日志</string>
     <string name="config_damaged">配置文件损坏，请清除应用数据</string>
     <string name="edit_list">编辑列表</string>
@@ -28,7 +28,7 @@
     <string name="search">搜索</string>
     <string name="system">系统</string>
     <!-- Home -->
-    <string name="home_xposed_activated">模块已激活 [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">模块已激活 [%s-%d]</string>
     <string name="home_xposed_not_activated">模块未激活</string>
     <string name="home_xposed_service_on">系统服务运行中 [%d]</string>
     <string name="home_xposed_service_off">系统服务未运行</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">权限被拒绝</string>
     <string name="settings_force_mount_data">为所有应用启用数据隔离</string>
     <string name="settings_force_mount_data_summary">数据隔离对于 Target API 低于 30 的应用默认禁用</string>
-    <string name="settings_hide_icon">在启动器中隐藏图标</string>
-    <string name="settings_hide_icon_summary">你仍然可以在 Xposed 管理器中打开此应用</string>
+    <string name="settings_ihide_icon">在启动器中隐藏图标</string>
+    <string name="settings_ihide_icon_summary">你仍然可以在 Xposed 管理器中打开此应用</string>
     <string name="settings_language">语言</string>
     <string name="settings_theme">主题</string>
     <string name="settings_system_theme_color">系统主题色</string>
@@ -103,7 +103,7 @@
     <string name="settings_force_clean_env_summary">只有在系统服务无法启动的情况下才应使用，否则请使用上面的选项。</string>
     <string name="settings_force_clean_env_toast_successful">运行环境已清理</string>
     <!-- About -->
-    <string name="about_description">虽然“检测安装的应用”是不正确的做法，但是并不是所有的与 root 相关联的插件类应用都提供了随机包名支持。\n这就意味着检测到安装了此类应用（如 Fake Location 、存储空间隔离）与检测到了 root 本身区别不大。\n\n与此同时，部分“不安分”的应用会使用各种漏洞绕过系统权限来获取你的应用列表，从而对你建立用户画像。\n\n该模块提供了一些检测方式用于测试您是否成功地隐藏了某些特定的包名；同时可作为 Xposed 模块用于隐藏应用列表或特定应用，保护隐私。    </string>
+    <string name="about_description">虽然“检测安装的应用”是不正确的做法，但是并不是所有的与 root 相关联的插件类应用都提供了随机包名支持。\n这就意味着检测到安装了此类应用（如 Fake Location 、存储空间隔离）与检测到了 root 本身区别不大。\n\n与此同时，部分“不安分”的应用会使用各种漏洞绕过系统权限来获取你的应用列表，从而对你建立用户画像。\n\n该模块提供了一些检测方式用于测试您是否成功地隐藏了某些特定的包名；同时可作为 Xposed 模块用于HMAL或特定应用，保护隐私。    </string>
     <string name="about_how_to_use_title">如何使用此模块</string>
     <string name="about_how_to_use_description_1">您可以在“模板管理”中创建模板。\n然后，将模板应用于“应用管理”中的应用。\n（您也可以为目标应用选择额外可见或不可见的应用。）\n注意：您应确保在 Xposed 中设置的模块作用域/白名单中有且仅有“系统框架”。(部分系统中“系统框架”可能显示为“Android”)    </string>
     <string name="about_how_to_use_description_2">配置修改即时生效。    </string>

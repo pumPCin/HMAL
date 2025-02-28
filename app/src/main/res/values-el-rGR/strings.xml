@@ -28,7 +28,7 @@
     <string name="search">Αναζήτηση</string>
     <string name="system">Σύστημα</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Module Activated [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Module Activated [%s-%d]</string>
     <string name="home_xposed_not_activated">Module Not Activated</string>
     <string name="home_xposed_service_on">Η υπηρεσία συστήματος εκτελείται [%d]</string>
     <string name="home_xposed_service_off">Η υπηρεσία συστήματος δεν εκτελείται</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-   <string name="settings_hide_icon">Hide module icon in launcher</string>
-    <string name="settings_hide_icon_summary">You can still open the app in Xposed manager</string>
+    <string name="settings_ihide_icon">Hide module icon in launcher</string>
+    <string name="settings_ihide_icon_summary">You can still open the app in Xposed manager</string>
     <string name="settings_language">Language</string>
     <string name="settings_theme">Theme</string>
     <string name="settings_system_theme_color">System theme color</string>

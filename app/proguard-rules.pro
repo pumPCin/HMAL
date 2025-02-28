@@ -1,5 +1,5 @@
 # Xposed
--keepclassmembers class icu.nullptr.hidemyapplist.MyApp {
+-keepclassmembers class com.android.hmal.MyApp {
     boolean isHooked;
 }
 

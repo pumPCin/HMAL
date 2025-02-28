@@ -28,7 +28,7 @@
     <string name="search">Cerca</string>
     <string name="system">Sistema</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modulo attivato [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Modulo attivato [%s-%d]</string>
     <string name="home_xposed_not_activated">Modulo non attivato</string>
     <string name="home_xposed_service_on">Servizio di sistema in esecuzione [%d]</string>
     <string name="home_xposed_service_off">Servizio di sistema stoppato</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_hide_icon">Nascondi icona modulo nel launcher</string>
-    <string name="settings_hide_icon_summary">Puoi sempre aprire l\'app in Xposed manager</string>
+    <string name="settings_ihide_icon">Nascondi icona modulo nel launcher</string>
+    <string name="settings_ihide_icon_summary">Puoi sempre aprire l\'app in Xposed manager</string>
     <string name="settings_language">Lingua</string>
     <string name="settings_theme">Tema</string>
     <string name="settings_system_theme_color">Colore tema di sistema</string>
@@ -102,7 +102,7 @@
     <string name="settings_force_clean_env">Forza pulizia ambiente runtime (root)</string>
     <string name="settings_force_clean_env_summary">Solo se il servizio di sistema non riesce ad avviarsi, altrimenti devi cliccare l\'opzione sopra.</string>
     <string name="settings_force_clean_env_toast_successful">Ambiente runtime pulito</string>
-   <!-- About -->
+    <!-- About -->
     <string name="about_description">        Sebbene non sia corretto rilevare l\'installazione di app specifiche, non tutte le app che utilizzano il root forniscono supporto per nome pacchetto casuale. In questo caso, le app rilevate che utilizzano root (come Fake Location e Storage Isolation) sono uguali al rilevamento del root stesso.\n\nAllo stesso tempo, alcune app intelligenti utilizzano varie scappatoie per acquisire il tuo elenco di app, in modo che possano impersonare un profilo per te.\n\nQuesto modulo fornisce alcuni metodi per verificare se hai già nascosto al meglio la tua lista di applicazioni. Inoltre, può funzionare come modulo Xposed per nascondere alcune app o rifiutare le richieste dell\'elenco di app per proteggere la tua privacy.
     </string>
     <string name="about_how_to_use_title">Come usare questo modulo</string>

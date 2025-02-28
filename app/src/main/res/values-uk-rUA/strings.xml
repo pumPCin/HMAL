@@ -28,7 +28,7 @@
     <string name="search">Пошук</string>
     <string name="system">Система</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Модуль активовано [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Модуль активовано [%s-%d]</string>
     <string name="home_xposed_not_activated">Модуль не активовано</string>
     <string name="home_xposed_service_on">Системна служба працює [%d]</string>
     <string name="home_xposed_service_off">Системна служба не працює</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">У дозволі відмовлено</string>
     <string name="settings_force_mount_data">Застосувати ізоляцію даних для всіх додатків</string>
     <string name="settings_force_mount_data_summary">За замовчуванням ізоляція даних вимкнена для цільових API додатків нижче 30</string>
-    <string name="settings_hide_icon">Сховати значок модуля в панелі запуску</string>
-    <string name="settings_hide_icon_summary">Ви все ще можете відкрити додаток у менеджері Xposed</string>
+    <string name="settings_ihide_icon">Сховати значок модуля в панелі запуску</string>
+    <string name="settings_ihide_icon_summary">Ви все ще можете відкрити додаток у менеджері Xposed</string>
     <string name="settings_language">Мова</string>
     <string name="settings_theme">Тема</string>
     <string name="settings_system_theme_color">Колір теми системи</string>

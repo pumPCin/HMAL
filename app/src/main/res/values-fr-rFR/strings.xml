@@ -28,7 +28,7 @@
     <string name="search">Rechercher</string>
     <string name="system">Système</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Module Actif [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Module Actif [%s-%d]</string>
     <string name="home_xposed_not_activated">Module Inactivé</string>
     <string name="home_xposed_service_on">Service système en fonctionnement [%d]</string>
     <string name="home_xposed_service_off">Service système ne fonctionne pas</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">Permission refusée</string>
     <string name="settings_force_mount_data">Assurer l\'isolement des données pour toutes les applications</string>
     <string name="settings_force_mount_data_summary">Isolation des données désactivée par défaut pour les applications dont l\'API ciblée est inférieure à 30</string>
-    <string name="settings_hide_icon">Masquer l\'icône du module dans le lanceur</string>
-    <string name="settings_hide_icon_summary">Vous pouvez toujours ouvrir l\'application depuis le gestionnaire Xposed</string>
+    <string name="settings_ihide_icon">Masquer l\'icône du module dans le lanceur</string>
+    <string name="settings_ihide_icon_summary">Vous pouvez toujours ouvrir l\'application depuis le gestionnaire Xposed</string>
     <string name="settings_language">Langue</string>
     <string name="settings_theme">Thème</string>
     <string name="settings_system_theme_color">Thème de couleur du système</string>

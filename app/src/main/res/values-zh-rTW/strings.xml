@@ -28,7 +28,7 @@
     <string name="search">搜索</string>
     <string name="system">系統</string>
     <!-- Home -->
-    <string name="home_xposed_activated">模組已啟用 [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">模組已啟用 [%s-%d]</string>
     <string name="home_xposed_not_activated">模組未啟用</string>
     <string name="home_xposed_service_on">系統服務正在執行 [%d]</string>
     <string name="home_xposed_service_off">系統服務未執行</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">授權遭拒絕</string>
     <string name="settings_force_mount_data">為所有應用程式啟用資料隔離</string>
     <string name="settings_force_mount_data_summary">資料隔離對於 Target API 低於 30 的應用程式預設停用</string>
-    <string name="settings_hide_icon">在啟動器中隱藏圖示</string>
-    <string name="settings_hide_icon_summary">你仍然可以在 Xposed 管理器中開啟並管理此應用</string>
+    <string name="settings_ihide_icon">在啟動器中隱藏圖示</string>
+    <string name="settings_ihide_icon_summary">你仍然可以在 Xposed 管理器中開啟並管理此應用</string>
     <string name="settings_language">語言</string>
     <string name="settings_theme">主題</string>
     <string name="settings_system_theme_color">系統主題色</string>
@@ -106,7 +106,7 @@
     <string name="about_description">        雖然檢測特定的應用程式安裝來判斷使否有使用 root 是不正卻也不應該的，但並不是每個使用 root 的應用程式都提供隨機包名的功能。\n在這種情況下，檢測到的使用 root 的應用程式 (例如 Fake Location 和儲存隔離) 就等於檢測到了 root 本身。\n\n同時，一些應用會利用各種漏洞來獲取你的應用列表，並預設你是使用 root 的使用者。\n\n這個模組提供了一些方法來測試你是否已經很好地隱藏了你的應用列表。\n同時它可以作為一個 Xposed 模塊來隱藏一些應用程式或拒絕應用程式列表請求，以保護你的隱私。
     </string>
     <string name="about_how_to_use_title">如何使用此模組</string>
-    <string name="about_how_to_use_description_1">        首先在 「模板管理」中建立模板。\n然後在 「應用管理」選擇想隱藏應用列表的應用程式並「啟用隱藏」並選擇設定好的模板。\n(當然你也可以選擇額外的應用程式隱藏或顯示)\n注意：你應該而且只應該在 Xposed 模組作用域或白名單中僅勾選「系統框架」(某些系統中可能會將系統框架顯示為 Android)
+    <string name="about_how_to_use_description_1">        首先在 「模板管理」中建立模板。\n然後在 「應用管理」選擇想HMAL的應用程式並「啟用隱藏」並選擇設定好的模板。\n(當然你也可以選擇額外的應用程式隱藏或顯示)\n注意：你應該而且只應該在 Xposed 模組作用域或白名單中僅勾選「系統框架」(某些系統中可能會將系統框架顯示為 Android)
     </string>
     <string name="about_how_to_use_description_2">        修改設定會立刻生效
     </string>

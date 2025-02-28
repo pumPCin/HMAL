@@ -25,5 +25,5 @@
 # @Serializable and @Polymorphic are used at runtime for polymorphic serialization.
 -keepattributes RuntimeVisibleAnnotations,AnnotationDefault
 
--keep class icu.nullptr.hidemyapplist.common.JsonConfig { *; }
--keep class icu.nullptr.hidemyapplist.common.JsonConfig$* { *; }
+-keep class com.android.hmal.common.JsonConfig { *; }
+-keep class com.android.hmal.common.JsonConfig$* { *; }

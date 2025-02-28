@@ -28,7 +28,7 @@
     <string name="search">Hledat</string>
     <string name="system">System</string>
     <!-- Home -->
-    <string name="home_xposed_activated">Modul aktivní [%s-%d]</string>
+    <string name="home_xposed_activated" formatted="false">Modul aktivní [%s-%d]</string>
     <string name="home_xposed_not_activated">Modul není aktivován</string>
     <string name="home_xposed_service_on">Systémová služba běží [%d]</string>
     <string name="home_xposed_service_off">Systémová služba neběží</string>
@@ -85,8 +85,8 @@
     <string name="settings_permission_denied">Permission denied</string>
     <string name="settings_force_mount_data">Enforce data isolation for all apps</string>
     <string name="settings_force_mount_data_summary">Data isolation is disabled for apps target API lower than 30 by default</string>
-    <string name="settings_hide_icon">Skrýt ikonu modulu ve spouštěči</string>
-    <string name="settings_hide_icon_summary">Aplikaci můžete stále otevřít ve správci Xposed</string>
+    <string name="settings_ihide_icon">Skrýt ikonu modulu ve spouštěči</string>
+    <string name="settings_ihide_icon_summary">Aplikaci můžete stále otevřít ve správci Xposed</string>
     <string name="settings_language">Jazyk</string>
     <string name="settings_theme">Motiv</string>
     <string name="settings_system_theme_color">Barva motivu systému</string>

@@ -46,12 +46,12 @@
             android:icon="@drawable/outline_storage_24"
             android:key="dataIsolation"
             android:title="@string/settings_data_isolation"
-            app:fragment="icu.nullptr.hidemyapplist.ui.fragment.SettingsFragment$DataIsolationPreferenceFragment" />
+            app:fragment="com.android.hmal.ui.fragment.SettingsFragment$DataIsolationPreferenceFragment" />
         <SwitchPreference
-            android:icon="@drawable/outline_hide_image_24"
+            android:icon="@drawable/outline_ihide_image_24"
             android:key="hideIcon"
-            android:summary="@string/settings_hide_icon_summary"
-            android:title="@string/settings_hide_icon" />
+            android:summary="@string/settings_ihide_icon_summary"
+            android:title="@string/settings_ihide_icon" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/settings_service">
