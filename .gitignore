@@ -79,3 +79,4 @@ lint/tmp/
 *.hprof
 
 updates/
+app/.DS_Store

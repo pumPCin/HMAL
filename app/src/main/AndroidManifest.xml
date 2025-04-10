@@ -16,11 +16,13 @@
 
         <activity
             android:name="com.android.hmal.ui.activity.AboutActivity"
-            android:theme="@style/AppTheme.About" />
+            android:theme="@style/AppTheme.About"
+            android:excludeFromRecents="true" />
         <activity
             android:name="com.android.hmal.ui.activity.MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />

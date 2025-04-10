@@ -29,7 +29,7 @@ data class JsonConfig(
     data class AppConfig(
         var disableVold: Boolean = false,
         var useWhitelist: Boolean = false,
-        var excludeSystemApps: Boolean = true,
+        var excludeSystemApps: Boolean = false,
         var applyTemplates: MutableSet<String> = mutableSetOf(),
         var extraAppList: MutableSet<String> = mutableSetOf()
     ) {

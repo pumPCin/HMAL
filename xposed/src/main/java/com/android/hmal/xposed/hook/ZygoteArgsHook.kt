@@ -34,9 +34,7 @@ class ZygoteArgsHook(private val service: HMALService) : IFrameworkHook {
                     if (service.isHookEnabled(app)) {
                         if (sAppDataIsolationEnabled) param.result = true
                         if (service.isVoldEnabled(app)) param.args[21] = true
-
                         val bindMountAppStorageDirs = param.args[21] as Boolean
-
                         return@hookBefore
                     }
                 }

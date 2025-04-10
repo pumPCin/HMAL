@@ -1,3 +1,4 @@
+import com.android.build.api.dsl.Packaging
 import java.util.*
 
 val officialBuild: Boolean by rootProject.extra
@@ -22,6 +23,26 @@ android {
     buildFeatures {
         buildConfig = true
         viewBinding = true
+    }
+
+    packaging {
+        dex.useLegacyPackaging = true
+        resources {
+            excludes += arrayOf(
+                "/META-INF/*",
+                "/META-INF/androidx/**",
+                "/kotlin/**",
+                "/okhttp3/**",
+            )
+        }
+    }
+
+    applicationVariants.all {
+        kotlin {
+            sourceSets.getByName(name) {
+                kotlin.srcDir("build/generated/ksp/$name/kotlin")
+            }
+        }
     }
 }
 
@@ -79,7 +100,7 @@ fun afterEval() = android.applicationVariants.forEach { variant ->
         dependsOn("assemble$variantCapped")
         from(layout.buildDirectory.dir("outputs/apk/$variantLowered"))
         into(layout.buildDirectory.dir("apk/$variantLowered"))
-        rename(".*.apk", "HMAL-V${variant.versionName}-${variant.buildType.name}.apk")
+        rename(".*.apk", "HMAL_${variant.versionName}_${variant.buildType.name}.apk")
     }
 }
 

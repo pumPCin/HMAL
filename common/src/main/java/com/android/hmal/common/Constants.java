@@ -26,6 +26,7 @@ public class Constants {
             "android.media",
             "android.uid.system",
             "android.uid.shell",
+            "com.android.shell",
             "android.uid.systemui",
             "com.android.permissioncontroller",
             "com.android.providers.downloads",
@@ -34,6 +35,7 @@ public class Constants {
             "com.android.providers.media.module",
             "com.android.providers.settings",
             "com.google.android.webview",
-            "com.google.android.providers.media.module"
+            "com.google.android.providers.media.module",
+            "com.android.phone"
     );
 }
