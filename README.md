@@ -18,3 +18,6 @@ https://github.com/mModule/guide_hma
 
 ## Update Log
 [Reference to the release page](https://github.com/pumPCin/HMAL/releases)  
+
+## Support me
+[Donate](https://new.donatepay.ru/@1377115)
