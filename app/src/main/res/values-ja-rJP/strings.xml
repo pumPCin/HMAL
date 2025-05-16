@@ -107,7 +107,6 @@
     <string name="about_how_to_use_title">このモジュールの使用方法</string>
     <string name="about_how_to_use_description_1">「テンプレート管理」でテンプレートを作成できます。\n次に、「アプリ管理」でテンプレートをアプリに適用します。 (ターゲットに追加のアプリを選択することもできます。)\nXposed モジュール スコープ/ホワイトリストで「システム フレームワーク」をチェックする必要があります。    </string>
     <string name="about_how_to_use_description_2">リアルタイムで有効な構成変更。    </string>
-    <string name="about_developer">デベロッパー</string>
     <string name="about_open_source">オープンソースライセンス</string>
     <!-- Colors -->
     <string name="color_sakura">桜</string>
