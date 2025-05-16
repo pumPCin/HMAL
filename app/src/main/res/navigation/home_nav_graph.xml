@@ -6,16 +6,16 @@
     app:startDestination="@id/nav_home">
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.android.hmal.ui.fragment.HomeFragment"
+        android:name="com.android.hml.ui.fragment.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_template_manage"
-        android:name="com.android.hmal.ui.fragment.TemplateManageFragment"
+        android:name="com.android.hml.ui.fragment.TemplateManageFragment"
         android:label="@string/title_template_manage" />
     <fragment
         android:id="@+id/nav_template_settings"
-        android:name="com.android.hmal.ui.fragment.TemplateSettingsFragment"
+        android:name="com.android.hml.ui.fragment.TemplateSettingsFragment"
         android:label="@string/title_template_settings">
         <argument
             android:name="name"
@@ -27,11 +27,11 @@
     </fragment>
     <fragment
         android:id="@+id/nav_app_manage"
-        android:name="com.android.hmal.ui.fragment.AppManageFragment"
+        android:name="com.android.hml.ui.fragment.AppManageFragment"
         android:label="@string/title_app_manage" />
     <fragment
         android:id="@+id/nav_app_settings"
-        android:name="com.android.hmal.ui.fragment.AppSettingsFragment"
+        android:name="com.android.hml.ui.fragment.AppSettingsFragment"
         android:label="@string/title_app_settings">
         <argument
             android:name="packageName"
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_scope"
-        android:name="com.android.hmal.ui.fragment.ScopeFragment"
+        android:name="com.android.hml.ui.fragment.ScopeFragment"
         android:label="@string/title_app_select">
         <argument
             android:name="filterOnlyEnabled"

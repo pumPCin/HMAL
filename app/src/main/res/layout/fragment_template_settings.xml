@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.hmal.ui.fragment.TemplateSettingsFragment">
+    tools:context="com.android.hml.ui.fragment.TemplateSettingsFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -39,14 +39,14 @@
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.android.hmal.ui.view.ListItemView
+        <com.android.hml.ui.view.ListItemView
             android:id="@+id/target_apps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:buttonText="@string/edit_list"
             app:icon="@drawable/baseline_apps_24" />
 
-        <com.android.hmal.ui.view.ListItemView
+        <com.android.hml.ui.view.ListItemView
             android:id="@+id/applied_apps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

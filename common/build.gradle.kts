@@ -10,7 +10,7 @@ val serviceVerCode: Int by rootProject.extra
 val minBackupVerCode: Int by rootProject.extra
 
 android {
-    namespace = "com.android.hmal.common"
+    namespace = "com.android.hml.common"
 
     buildFeatures {
         aidl = true

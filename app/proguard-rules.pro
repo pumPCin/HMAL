@@ -1,5 +1,5 @@
 # Xposed
--keepclassmembers class com.android.hmal.MyApp {
+-keepclassmembers class com.android.hml.MyApp {
     boolean isHooked;
 }
 
@@ -10,6 +10,6 @@
 }
 
 -keep,allowoptimization class * extends androidx.preference.PreferenceFragmentCompat
--keepclassmembers class com.google.android.hmal.databinding.**  {
+-keepclassmembers class com.google.android.hml.databinding.**  {
     public <methods>;
 }

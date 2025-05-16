@@ -7,6 +7,6 @@
     <include app:graph="@navigation/home_nav_graph" />
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.android.hmal.ui.fragment.SettingsFragment"
+        android:name="com.android.hml.ui.fragment.SettingsFragment"
         android:label="@string/title_settings" />
 </navigation>

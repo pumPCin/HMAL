@@ -14,11 +14,8 @@ plugins {
     alias(libs.plugins.nav.safeargs.kotlin)
 }
 
-if (officialBuild) {
-}
-
 android {
-    namespace = "com.google.android.hmal"
+    namespace = "com.google.android.hml"
 
     buildFeatures {
         buildConfig = true
@@ -53,7 +50,7 @@ kotlin {
 autoResConfig {
     generateClass.set(true)
     generateRes.set(false)
-    generatedClassFullName.set("com.android.hmal.util.LangList")
+    generatedClassFullName.set("com.android.hml.util.LangList")
     generatedArrayFirstItem.set("SYSTEM")
 }
 

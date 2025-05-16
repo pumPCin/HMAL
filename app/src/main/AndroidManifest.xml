@@ -7,7 +7,7 @@
         tools:ignore="QueryAllPackagesPermission" />
 
     <application
-        android:name="com.android.hmal.MyApp"
+        android:name="com.android.hml.MyApp"
         android:allowBackup="true"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,11 +15,11 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.android.hmal.ui.activity.AboutActivity"
+            android:name="com.android.hml.ui.activity.AboutActivity"
             android:theme="@style/AppTheme.About"
             android:excludeFromRecents="true" />
         <activity
-            android:name="com.android.hmal.ui.activity.MainActivity"
+            android:name="com.android.hml.ui.activity.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan"
             android:excludeFromRecents="true">
@@ -33,7 +33,7 @@
             android:name=".MainActivityLauncher"
             android:exported="true"
             android:label="@string/app_name"
-            android:targetActivity="com.android.hmal.ui.activity.MainActivity">
+            android:targetActivity="com.android.hml.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -41,8 +41,8 @@
         </activity-alias>
 
         <provider
-            android:name="com.android.hmal.service.ServiceProvider"
-            android:authorities="com.google.android.hmal.ServiceProvider"
+            android:name="com.android.hml.service.ServiceProvider"
+            android:authorities="com.google.android.hml.ServiceProvider"
             android:exported="true"
             tools:ignore="ExportedContentProvider" />
 

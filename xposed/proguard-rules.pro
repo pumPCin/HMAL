@@ -1,5 +1,5 @@
 -keep class com.github.kyuubiran.ezxhelper.utils.** { *; }
--keep class com.android.hmal.xposed.XposedEntry { *; }
+-keep class com.android.hml.xposed.XposedEntry { *; }
 -dontwarn java.lang.invoke.StringConcatFactory
 -dontwarn android.content.res.XModuleResources
 -dontwarn android.content.res.XResources

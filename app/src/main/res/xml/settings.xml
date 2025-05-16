@@ -46,7 +46,7 @@
             android:icon="@drawable/outline_storage_24"
             android:key="dataIsolation"
             android:title="@string/settings_data_isolation"
-            app:fragment="com.android.hmal.ui.fragment.SettingsFragment$DataIsolationPreferenceFragment" />
+            app:fragment="com.android.hml.ui.fragment.SettingsFragment$DataIsolationPreferenceFragment" />
         <SwitchPreference
             android:icon="@drawable/outline_ihide_image_24"
             android:key="hideIcon"

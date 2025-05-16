@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceTitleSmall"
-            tools:text="HMAL-B" />
+            tools:text="Bridge" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/message"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="2dp"
             android:textAppearance="?textAppearanceBodySmall"
-            tools:text="HMAL-S initialized" />
+            tools:text="Service initialized" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/date"
