@@ -72,9 +72,9 @@ class StartActivityHook(private val service: HMALService) : IFrameworkHook {
                                     val targetDescription = targetPackageNameFromIntent!!
 
                                     if (intent.isWebIntent()) {
-                                        param.throwable = ActivityNotFoundException("No Activity found to handle $intent (web intent blocked by HMA rules for $callerPackageName)")
+                                        param.throwable = ActivityNotFoundException("No Activity found to handle $intent (web intent blocked by app rules for $callerPackageName)")
                                     } else {
-                                        param.throwable = ActivityNotFoundException("No Activity found to handle $intent (intent blocked by HMA rules for $callerPackageName)")
+                                        param.throwable = ActivityNotFoundException("No Activity found to handle $intent (intent blocked by app rules for $callerPackageName)")
                                     }
                                 }
                             }.onFailure {                            }
