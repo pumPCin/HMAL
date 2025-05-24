@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">Dừng dịch vụ</string>
     <string name="settings_stop_system_service_summary">Cần chạy lại dịch vụ</string>
     <string name="settings_is_clean_env">Làm sạch môi trường thời gian chạy cùng lúc?</string>
-    <string name="settings_is_clean_env_summary">Xóa bộ nhớ cache của dịch vụ hệ thống trong /data/misc/hma1-*. Điều này có nghĩa là bạn cần phải khởi chạy ứng dụng mô-đun một lần theo cách thủ công sau lần khởi động lại tiếp theo để cho phép đánh chặn và số lần đánh chặn cũng sẽ được xóa sạch.</string>
+    <string name="settings_is_clean_env_summary">Xóa bộ nhớ cache của dịch vụ hệ thống trong /data/misc/com.google.hmal.*. Điều này có nghĩa là bạn cần phải khởi chạy ứng dụng mô-đun một lần theo cách thủ công sau lần khởi động lại tiếp theo để cho phép đánh chặn và số lần đánh chặn cũng sẽ được xóa sạch.</string>
     <string name="settings_force_clean_env">Buộc môi trường thời gian chạy sạch (root)</string>
     <string name="settings_force_clean_env_summary">Chỉ khi dịch vụ hệ thống không khởi động được, nếu không bạn nên nhấp vào tùy chọn trên.</string>
     <string name="settings_force_clean_env_toast_successful">Môi trường Runtime đã sạch</string>
@@ -108,7 +108,6 @@
     <string name="about_how_to_use_title">Làm sao để dùng mô đun này</string>
     <string name="about_how_to_use_description_1">Bạn có thể tạo danh mục trong \"Quản lý danh mục\". \nSau đó, áp dụng cho các ứng dụng trong \"Quản lý ứng dụng\". (Bạn cũng có thể chọn các ứng dụng bổ sung cho các mục tiêu.) \nBạn nên và CHỈ nên kiểm tra \"Khung hệ thống\" trong phạm vi mô-đun Xposed / danh sách trắng.</string>
     <string name="about_how_to_use_description_2">Sửa đổi cấu hình hiệu quả trong thời gian thực.</string>
-    <string name="about_developer">Nhà phát triển</string>
     <string name="about_open_source">Giấy phép nguồn mở</string>
     <!-- Colors -->
     <string name="color_sakura">Anh đào</string>

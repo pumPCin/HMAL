@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">Zastavit systémovou službu</string>
     <string name="settings_stop_system_service_summary">K restartování služby je třeba restartovat</string>
     <string name="settings_is_clean_env">Vyčistit runtime prostředí ve stejnou dobu?</string>
-    <string name="settings_is_clean_env_summary">Odeberte mezipaměť systémové služby v /data/misc/hma1-*. To znamená, že musíte po příštím restartu spustit aplikaci modulu jednou ručně, abyste povolili odposlechy a počty odposlechů budou také vyčištěny.</string>
+    <string name="settings_is_clean_env_summary">Odeberte mezipaměť systémové služby v /data/misc/com.google.hmal.*. To znamená, že musíte po příštím restartu spustit aplikaci modulu jednou ručně, abyste povolili odposlechy a počty odposlechů budou také vyčištěny.</string>
     <string name="settings_force_clean_env">Force clean runtime environment (root)</string>
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
@@ -110,7 +110,6 @@
     </string>
     <string name="about_how_to_use_description_2">        Config modification effective in real time.
     </string>
-    <string name="about_developer">Developer</string>
     <string name="about_open_source">Open source licenses</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>

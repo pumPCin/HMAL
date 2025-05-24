@@ -80,6 +80,8 @@
     <string name="settings_data_isolation_unsupported">This option is only available on Android 11 and above</string>
     <string name="settings_app_data_isolation">App data isolation</string>
     <string name="settings_vold_app_data_isolation">Vold app data isolation</string>
+    <string name="settings_warning">Warning</string>
+    <string name="settings_vold_warning">This will enable an AOSP feature which make app\'s external private storage directory isolated. This can help improve hiding apps while may cause stability issues. This feature may stop working at any time since it is abandoned in AOSP.</string>
     <string name="settings_change_require_root">Changing requires root permission</string>
     <string name="settings_need_reboot">Changing requires reboot</string>
     <string name="settings_permission_denied">Permission denied</string>
@@ -98,19 +100,15 @@
     <string name="settings_stop_system_service">Stop system service</string>
     <string name="settings_stop_system_service_summary">Need reboot to restart service</string>
     <string name="settings_is_clean_env">Clean runtime environment at the same time?</string>
-    <string name="settings_is_clean_env_summary">Remove system service cache in /data/misc/hma1-*. This means you need to launch the module app once manually after next reboot in order to enable interceptions, and interception counts will also be cleaned.</string>
+    <string name="settings_is_clean_env_summary">Remove system service cache in /data/misc/com.google.hmal.*. This means you need to launch the module app once manually after next reboot in order to enable interceptions, and interception counts will also be cleaned.</string>
     <string name="settings_force_clean_env">Force clean runtime environment (root)</string>
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
     <!-- About -->
-    <string name="about_description">        Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.
-    </string>
+    <string name="about_description">Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.</string>
     <string name="about_how_to_use_title">How to use this module</string>
-    <string name="about_how_to_use_description_1">        You can create templates in \"Template manage\".\nThen apply the templates to apps in \"App manage\". (You can also select extra apps for targets.)\nYou should and ONLY should check \"System Framework\" in Xposed module scope / whitelist.
-    </string>
-    <string name="about_how_to_use_description_2">        Config modification effective in real time.
-    </string>
-    <string name="about_developer">Developer</string>
+    <string name="about_how_to_use_description_1">You can create templates in \"Template manage\".\nThen apply the templates to apps in \"App manage\". (You can also select extra apps for targets.)\nYou should and ONLY should check \"System Framework\" in Xposed module scope / whitelist.</string>
+    <string name="about_how_to_use_description_2">Config modification effective in real time.</string>
     <string name="about_open_source">Open source licenses</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>

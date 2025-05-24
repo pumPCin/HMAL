@@ -27,7 +27,6 @@ data class JsonConfig(
 
     @Serializable
     data class AppConfig(
-        var disableVold: Boolean = false,
         var useWhitelist: Boolean = false,
         var excludeSystemApps: Boolean = false,
         var applyTemplates: MutableSet<String> = mutableSetOf(),

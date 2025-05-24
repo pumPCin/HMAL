@@ -14,9 +14,6 @@ plugins {
     alias(libs.plugins.nav.safeargs.kotlin)
 }
 
-if (officialBuild) {
-}
-
 android {
     namespace = "com.google.android.hmal"
 

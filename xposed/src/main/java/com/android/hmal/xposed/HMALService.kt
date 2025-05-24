@@ -10,7 +10,7 @@ import java.io.File
 class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
 
     companion object {
-        private const val TAG = "HMAL-S"
+        private const val TAG = "Service"
         var instance: HMALService? = null
     }
 
@@ -23,7 +23,7 @@ class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
     private val systemApps = mutableSetOf<String>()
     private val frameworkHooks = mutableSetOf<IFrameworkHook>()
 
-    var config = JsonConfig().apply { forceMountData = false }
+    var config = JsonConfig().apply { forceMountData = true }
         private set
 
     init {
@@ -40,7 +40,7 @@ class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
             }
         }
         File("/data/misc").list()?.forEach {
-            if (it.startsWith("hma1-")) {
+            if (it.startsWith("com.google.hmal.")) {
                 if (!this::dataDir.isInitialized) {
                     dataDir = "/data/misc/$it"
                 } else if (dataDir != "/data/misc/$it") {
@@ -49,7 +49,7 @@ class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
             }
         }
         if (!this::dataDir.isInitialized) {
-            dataDir = "/data/misc/hma1-" + Utils.generateRandomString(4) + "-" + Utils.generateRandomString(4) + "-" + Utils.generateRandomString(4) + "-" + Utils.generateRandomString(4)
+            dataDir = "/data/misc/com.google.hmal." + Utils.generateRandomString(8)
         }
 
         File("$dataDir/log").mkdirs()
@@ -77,18 +77,22 @@ class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
             if (it.flags and ApplicationInfo.FLAG_SYSTEM != 0) it.packageName else null
         }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            frameworkHooks.add(PmsHookTarget34(this))
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             frameworkHooks.add(PmsHookTarget33(this))
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             frameworkHooks.add(PmsHookTarget30(this))
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            frameworkHooks.add(PmsHookTarget28(this))
         } else {
-            frameworkHooks.add(PmsHookLegacy(this))
+            frameworkHooks.add(PmsHookTarget28(this))
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            frameworkHooks.add(ZygoteArgsHook(this))
+            frameworkHooks.add(PlatformCompatHook(this))
+        }
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+            frameworkHooks.add(StartActivityHook(this))
         }
 
         frameworkHooks.forEach(IFrameworkHook::load)
@@ -96,16 +100,10 @@ class HMALService(val pms: IPackageManager) : IHMALService.Stub() {
 
     fun isHookEnabled(packageName: String) = config.scope.containsKey(packageName)
 
-    fun isVoldEnabled(packageName: String) : Boolean {
-        val appConfig = config.scope[packageName] ?: return false
-        var disableVold = appConfig.disableVold ?: return false
-        return disableVold
-    }
-
     fun shouldHide(caller: String?, query: String?): Boolean {
         if (caller == null || query == null) return false
         if (caller in Constants.packagesShouldNotHide || query in Constants.packagesShouldNotHide) return false
-        if ((caller == Constants.GMS_PACKAGE_NAME || caller == Constants.GSF_PACKAGE_NAME) && query == Constants.APP_PACKAGE_NAME) return false // If apply hide on gms, HMAL app will crash 😓
+        if ((caller == Constants.GMS_PACKAGE_NAME || caller == Constants.GSF_PACKAGE_NAME) && query == Constants.APP_PACKAGE_NAME) return false
         if (caller == query) return false
         val appConfig = config.scope[caller] ?: return false
         if (appConfig.useWhitelist && appConfig.excludeSystemApps && query in systemApps) return false

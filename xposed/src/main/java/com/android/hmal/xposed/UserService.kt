@@ -13,7 +13,7 @@ import rikka.hidden.compat.adapter.UidObserverAdapter
 
 object UserService {
 
-    private const val TAG = "HMAL-US"
+    private const val TAG = "US"
 
     private var appUid = 0
 
@@ -48,6 +48,7 @@ object UserService {
     fun register(pms: IPackageManager) {
         val service = HMALService(pms)
         appUid = Utils.getPackageUidCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
+        val appPackage = Utils.getPackageInfoCompat(service.pms, Constants.APP_PACKAGE_NAME, 0, 0)
         waitSystemService("activity")
         ActivityManagerApis.registerUidObserver(
             uidObserver,

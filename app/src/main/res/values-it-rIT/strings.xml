@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">Stoppa servizio di sistema</string>
     <string name="settings_stop_system_service_summary">È necessario riavviare per riavviare il servizio</string>
     <string name="settings_is_clean_env">Pulire l\'ambiente di runtime allo stesso tempo?</string>
-    <string name="settings_is_clean_env_summary">Rimuove la cache del servizio di sistema in /data/misc/hma1-*. Questo significa che è necessario avviare l\'app del modulo una volta manualmente dopo il prossimo riavvio per abilitare le intercettazioni e anche i conteggi delle intercettazioni verranno resettati.</string>
+    <string name="settings_is_clean_env_summary">Rimuove la cache del servizio di sistema in /data/misc/com.google.hmal.*. Questo significa che è necessario avviare l\'app del modulo una volta manualmente dopo il prossimo riavvio per abilitare le intercettazioni e anche i conteggi delle intercettazioni verranno resettati.</string>
     <string name="settings_force_clean_env">Forza pulizia ambiente runtime (root)</string>
     <string name="settings_force_clean_env_summary">Solo se il servizio di sistema non riesce ad avviarsi, altrimenti devi cliccare l\'opzione sopra.</string>
     <string name="settings_force_clean_env_toast_successful">Ambiente runtime pulito</string>
@@ -110,7 +110,6 @@
     </string>
     <string name="about_how_to_use_description_2">        Modifiche alla configurazione sono effettive in tempo reale.
     </string>
-    <string name="about_developer">Sviluppatore</string>
     <string name="about_open_source">Licenze open source</string>
     <!-- Colors -->
     <string name="color_sakura">Sakura</string>

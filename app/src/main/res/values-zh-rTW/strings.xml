@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">停止系統服務</string>
     <string name="settings_stop_system_service_summary">需要重啟來重啟服務</string>
     <string name="settings_is_clean_env">同時清理執行環境?</string>
-    <string name="settings_is_clean_env_summary">刪除 /data/misc/hma1-* 中的系統服務快取。這意味著你需要在下次重啟後手動啟動一次模組應用，以便啟用攔截，攔截次數也將被清理</string>
+    <string name="settings_is_clean_env_summary">刪除 /data/misc/com.google.hmal.* 中的系統服務快取。這意味著你需要在下次重啟後手動啟動一次模組應用，以便啟用攔截，攔截次數也將被清理</string>
     <string name="settings_force_clean_env">強制清理執行環境 (root)</string>
     <string name="settings_force_clean_env_summary">只有在系統服務無法啟動的情況下使用</string>
     <string name="settings_force_clean_env_toast_successful">執行環境已清理</string>
@@ -110,7 +110,6 @@
     </string>
     <string name="about_how_to_use_description_2">        修改設定會立刻生效
     </string>
-    <string name="about_developer">開發者</string>
     <string name="about_open_source">開源許可證</string>
     <!-- Colors -->
     <string name="color_sakura">櫻花</string>

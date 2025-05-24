@@ -72,7 +72,6 @@ class AppSettingsFragment : Fragment(R.layout.fragment_settings) {
 
         override fun getBoolean(key: String, defValue: Boolean): Boolean {
             return when (key) {
-                "disableVold" -> pack.config.disableVold
                 "enableHide" -> pack.enabled
                 "useWhiteList" -> pack.config.useWhitelist
                 "excludeSystemApps" -> pack.config.excludeSystemApps
@@ -82,7 +81,6 @@ class AppSettingsFragment : Fragment(R.layout.fragment_settings) {
 
         override fun putBoolean(key: String, value: Boolean) {
             when (key) {
-                "disableVold" -> pack.config.disableVold = value
                 "enableHide" -> pack.enabled = value
                 "useWhiteList" -> pack.config.useWhitelist = value
                 "excludeSystemApps" -> pack.config.excludeSystemApps = value
@@ -114,10 +112,6 @@ class AppSettingsFragment : Fragment(R.layout.fragment_settings) {
                 it.icon = PackageHelper.loadAppIcon(pack.app).toDrawable(resources)
                 it.title = PackageHelper.loadAppLabel(pack.app)
                 it.summary = PackageHelper.loadPackageInfo(pack.app).packageName
-            }
-            findPreference<SwitchPreference>("disableVold")?.setOnPreferenceChangeListener { _, newValue ->
-                pack.config.disableVold = newValue as Boolean
-                true
             }
             findPreference<SwitchPreference>("useWhiteList")?.setOnPreferenceChangeListener { _, newValue ->
                 pack.config.applyTemplates.clear()

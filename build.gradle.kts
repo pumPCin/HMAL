@@ -26,7 +26,7 @@ val minSdkVer by extra(28)
 val targetSdkVer by extra(35)
 val buildToolsVer by extra("35.0.1")
 
-val appVerName by extra("4.2.0")
+val appVerName by extra("4.2.1")
 val configVerCode by extra(90)
 val serviceVerCode by extra(97)
 val minBackupVerCode by extra(65)
@@ -53,7 +53,7 @@ fun Project.configureBaseExtension() {
             versionCode = gitCommitCount
             versionName = appVerName
             if (localProperties.getProperty("buildWithGitSuffix").toBoolean())
-                versionNameSuffix = ".r${gitCommitCount}"
+                versionNameSuffix = ".${gitCommitCount}"
 
             consumerProguardFiles("proguard-rules.pro")
         }

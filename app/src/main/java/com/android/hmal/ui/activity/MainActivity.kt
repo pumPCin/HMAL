@@ -3,7 +3,7 @@ package com.android.hmal.ui.activity
 import android.content.res.Resources
 import android.graphics.Color
 import android.os.Bundle
-import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.google.android.material.color.DynamicColors
@@ -26,7 +26,7 @@ class MainActivity : MaterialActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        val navController = this.findNavController(R.id.nav_host_fragment)
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 

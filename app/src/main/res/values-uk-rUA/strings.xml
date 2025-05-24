@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">Зупинити системну службу</string>
     <string name="settings_stop_system_service_summary">Потрібне перезавантаження, щоб перезапустити службу</string>
     <string name="settings_is_clean_env">Очистити також середовище виконання?</string>
-    <string name="settings_is_clean_env_summary">Видаліть кеш системної служби в /data/misc/hma1-*. Це означає, що вам потрібно один раз запустити програму модуля вручну після наступного перезавантаження, щоб увімкнути перехоплення, і кількість перехоплень також буде очищено.</string>
+    <string name="settings_is_clean_env_summary">Видаліть кеш системної служби в /data/misc/com.google.hmal.*. Це означає, що вам потрібно один раз запустити програму модуля вручну після наступного перезавантаження, щоб увімкнути перехоплення, і кількість перехоплень також буде очищено.</string>
     <string name="settings_force_clean_env">Примусово очистити середовище виконання (root)</string>
     <string name="settings_force_clean_env_summary">Лише якщо не вдається запустити системну службу, інакше вам слід натиснути вищезазначену опцію.</string>
     <string name="settings_force_clean_env_toast_successful">Середовище виконання очищено</string>
@@ -110,7 +110,6 @@
     </string>
     <string name="about_how_to_use_description_2">        Модифікація конфігурації діє в режимі реального часу.
     </string>
-    <string name="about_developer">Розробник</string>
     <string name="about_open_source">Ліцензії з відкритим вихідним кодом</string>
     <!-- Colors -->
     <string name="color_sakura">Сакура</string>

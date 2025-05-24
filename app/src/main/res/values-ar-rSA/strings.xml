@@ -98,7 +98,7 @@
     <string name="settings_stop_system_service">إيقاف خدمة النظام</string>
     <string name="settings_stop_system_service_summary">تحتاج إلى إعادة التشغيل لإعادة تشغيل الخدمة</string>
     <string name="settings_is_clean_env">تنظيف بيئة التشغيل في نفس الوقت؟</string>
-    <string name="settings_is_clean_env_summary">إزالة التخزين المؤقت لخدمة النظام في /data/misc/hma1-*. هذا يعني أنك ستحتاج إلى تشغيل الوحدة مرة واحدة يدويا بعد إعادة التشغيل التالي حتي تعمل الاعتراضات، وسيتم أيضا تنظيف عمليات الاعتراض.</string>
+    <string name="settings_is_clean_env_summary">إزالة التخزين المؤقت لخدمة النظام في /data/misc/com.google.hmal.*. هذا يعني أنك ستحتاج إلى تشغيل الوحدة مرة واحدة يدويا بعد إعادة التشغيل التالي حتي تعمل الاعتراضات، وسيتم أيضا تنظيف عمليات الاعتراض.</string>
     <string name="settings_force_clean_env">إجبار تنظيف بيئة العمل (جذر)</string>
     <string name="settings_force_clean_env_summary">فقط إذا فشلت خدمة النظام في البَدْء، وإلا يجب عليك أن تضغط علي الخِيار أعلاه.</string>
     <string name="settings_force_clean_env_toast_successful">تـم تنظيف بيئة التشغيل</string>
@@ -107,7 +107,6 @@
     <string name="about_how_to_use_title">كيفية استخدام هذه الوحدة</string>
     <string name="about_how_to_use_description_1">يمكنك إنشاء قوالب من \"مدير القوالب\". ثم تطبيق هذه القوالب علي التطبيقات من \"مدير التطبيقات\".(يمكنك أيضا اختيار تطبيقات إضافية للتطبيقات المستهدفة.) يجب عليك ويجب عليك فقط اختيار \"إطار النظام\" من نطاق وحدة إكسبوسد/القائمة البيضاء.    </string>
     <string name="about_how_to_use_description_2">تعديل التكوين فعال في الوقت الحقيقي.    </string>
-    <string name="about_developer">المطور</string>
     <string name="about_open_source">رخصة مفتوحة المصدر</string>
     <!-- Colors -->
     <string name="color_sakura">ساكورا</string>

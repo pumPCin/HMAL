@@ -24,6 +24,7 @@ kotlin {
 dependencies {
     implementation(projects.common)
 
+    implementation(libs.androidx.annotation.jvm)
     implementation(libs.com.android.tools.build.apksig)
     implementation(libs.com.github.kyuubiran.ezxhelper)
     implementation(libs.dev.rikka.hidden.compat)

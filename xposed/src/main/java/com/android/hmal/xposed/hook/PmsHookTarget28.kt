@@ -1,8 +1,6 @@
 package com.android.hmal.xposed.hook
 
-import android.annotation.TargetApi
 import android.content.pm.ResolveInfo
-import android.os.Build
 import com.github.kyuubiran.ezxhelper.utils.findMethod
 import com.github.kyuubiran.ezxhelper.utils.hookAfter
 import com.github.kyuubiran.ezxhelper.utils.hookBefore
@@ -11,11 +9,10 @@ import com.android.hmal.common.Constants
 import com.android.hmal.xposed.*
 import java.util.concurrent.atomic.AtomicReference
 
-@TargetApi(Build.VERSION_CODES.P)
 class PmsHookTarget28(private val service: HMALService) : IFrameworkHook {
 
     companion object {
-        private const val TAG = "HMAL-PHT28"
+        private const val TAG = "PHT28"
     }
 
     private val hooks = mutableListOf<XC_MethodHook.Unhook>()
