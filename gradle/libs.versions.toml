@@ -2,7 +2,7 @@
 agp = "8.10.0"
 kotlin = "2.1.21"
 nav = "2.9.0"
-hidden-api = "4.3.3"
+hidden-api = "4.4.0"
 
 [plugins]
 agp-app = { id = "com.android.application", version.ref = "agp" }
