@@ -20,7 +20,7 @@ androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jv
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "nav" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "nav" }
 androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version = "1.2.1" }
-androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version = "1.1.0" }
+androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version = "1.2.0" }
 com-android-tools-build-apksig = { module = "com.android.tools.build:apksig", version.ref = "agp" }
 com-drakeet-about = { module = "com.drakeet.about:about", version = "2.5.2" }
 com-drakeet-multitype = { module = "com.drakeet.multitype:multitype", version = "4.3.0" }
