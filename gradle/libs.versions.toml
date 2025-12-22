@@ -1,7 +1,7 @@
 [versions]
 agp = "8.13.2"
 hidden-api = "4.4.0"
-kotlin = "2.2.21"
+kotlin = "2.3.0"
 nav = "2.9.6"
 
 [plugins]
@@ -10,7 +10,7 @@ agp-lib = { id = "com.android.library", version.ref = "agp" }
 autoresconfig = { id = "dev.rikka.tools.autoresconfig", version = "1.2.2" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version = "2.3.3" }
+ksp = { id = "com.google.devtools.ksp", version = "2.3.4" }
 materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.5.1" }
 nav-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav" }
 refine = { id = "dev.rikka.tools.refine", version = "4.4.0" }
