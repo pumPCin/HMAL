@@ -6,7 +6,6 @@ import java.util.Locale
 plugins {
     alias(libs.plugins.agp.lib)
     alias(libs.plugins.refine)
-    alias(libs.plugins.kotlin)
 }
 
 android {

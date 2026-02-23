@@ -8,7 +8,6 @@ plugins {
     alias(libs.plugins.autoresconfig)
     alias(libs.plugins.materialthemebuilder)
     alias(libs.plugins.refine)
-    alias(libs.plugins.kotlin)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.nav.safeargs.kotlin)
@@ -23,7 +22,6 @@ android {
     }
 
     packaging {
-        dex.useLegacyPackaging = true
         resources {
             excludes += arrayOf(
                 "/META-INF/*",
@@ -31,14 +29,6 @@ android {
                 "/kotlin/**",
                 "/okhttp3/**",
             )
-        }
-    }
-
-    applicationVariants.all {
-        kotlin {
-            sourceSets.getByName(name) {
-                kotlin.srcDir("build/generated/ksp/$name/kotlin")
-            }
         }
     }
 }
@@ -89,20 +79,18 @@ materialThemeBuilder {
     generatePalette = true
 }
 
-fun afterEval() = android.applicationVariants.forEach { variant ->
-    val variantCapped = variant.name.replaceFirstChar { it.titlecase(Locale.ROOT) }
-    val variantLowered = variant.name.lowercase(Locale.ROOT)
-
-    task<Sync>("build$variantCapped") {
-        dependsOn("assemble$variantCapped")
-        from(layout.buildDirectory.dir("outputs/apk/$variantLowered"))
-        into(layout.buildDirectory.dir("apk/$variantLowered"))
-        rename(".*.apk", "HMAL_${variant.versionName}_${variant.buildType.name}.apk")
-    }
-}
-
 afterEvaluate {
-    afterEval()
+    android.applicationVariants.forEach { variant ->
+        val variantCapped = variant.name.replaceFirstChar { it.titlecase(Locale.ROOT) }
+        val variantLowered = variant.name.lowercase(Locale.ROOT)
+
+        tasks.register<Sync>("build$variantCapped") {
+            dependsOn("assemble$variantCapped")
+            from(layout.buildDirectory.dir("outputs/apk/$variantLowered"))
+            into(layout.buildDirectory.dir("apk/$variantLowered"))
+            rename(".*.apk", "HMAL_${variant.versionName}_${variant.buildType.name}.apk")
+        }
+    }
 }
 
 dependencies {
