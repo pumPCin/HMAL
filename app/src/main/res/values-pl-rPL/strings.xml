@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="app_name">Ukryj Moją Listę Aplikacji</string>
+  <string name="title_home">Strona główna</string>
+  <string name="title_settings">Ustawienia</string>
+  <string name="title_template_manage">Zarządzanie szablonami</string>
+  <string name="title_template_settings">Ustawienia szablonu</string>
+  <string name="title_app_manage">Zarządzanie aplikacjami</string>
+  <string name="title_app_select">Wybierz aplikacje</string>
+  <string name="title_app_settings">Ustawienia aplikacji</string>
+  <string name="title_about">O aplikacji</string>
+  <string name="do_not_dual">Nie instaluj Ukryj Moją Listę Aplikacji dla drugiego użytkownika</string>
+  <string name="show_crash_log">Pokaż dziennik awarii</string>
+  <string name="config_damaged">Plik konfiguracyjny jest uszkodzony. Wyczyść dane aplikacji.</string>
+  <string name="edit_list">Edytuj listę</string>
+  <string name="delete">Usuń</string>
+  <string name="enabled">Włączone</string>
+  <string name="disabled">Wyłączone</string>
+  <string name="work_mode">Tryb pracy</string>
+  <string name="blacklist">Czarna lista</string>
+  <string name="whitelist">Biała lista</string>
+  <string name="application">Aplikacja</string>
+  <string name="preferences">Preferencje</string>
+  <string name="refresh">Odśwież</string>
+  <string name="filter">Filtr</string>
+  <string name="yes">Tak</string>
+  <string name="no">Nie</string>
+  <string name="search">Wyszukaj</string>
+  <string name="system">System</string>
+  <!-- Strona główna-->
+  <string name="home_xposed_activated" formatted="false">Moduł aktywowany [%s-%d]</string>
+  <string name="home_xposed_not_activated">Moduł nieaktywowany</string>
+  <string name="home_xposed_service_on">Usługa systemowa uruchomiona [%d]</string>
+  <string name="home_xposed_service_off">Usługa systemowa nie uruchomiona</string>
+  <string name="home_xposed_service_old">Moduł zaktualizowany, konieczny restart</string>
+  <string name="home_manage">Zarządzaj</string>
+  <string name="home_backup_and_restore">Kopia zapasowa i przywracanie</string>
+  <string name="home_backup_config">Kopia zapasowa konfiguracji</string>
+  <string name="home_restore_config">Przywróć konfigurację</string>
+  <string name="home_import_successful">Importowano pomyślnie</string>
+  <string name="home_import_failed">Importowanie nieudane</string>
+  <string name="home_import_app_version_too_old">Wersja modułu jest niższa niż kopia zapasowa</string>
+  <string name="home_import_backup_version_too_old">Wersja kopii zapasowej jest za stara</string>
+  <string name="home_import_file_damaged">Plik kopii zapasowej został uszkodzony</string>
+  <string name="home_export_failed">Eksportowanie nieudane</string>
+  <string name="home_exported">Utworzono kopię zapasową konfiguracji</string>
+  <!-- Wybierz aplikację-->
+  <string name="list_show_system">Pokaż aplikacje systemowe</string>
+  <string name="list_sorting">Sortowanie</string>
+  <string name="list_reverse_order">Odwrotna kolejność</string>
+  <string name="list_sort_by_label">Według nazwy aplikacji</string>
+  <string name="list_sort_by_package_name">Według nazwy pakietu</string>
+  <string name="list_sort_by_install_time">Do czasu instalacji</string>
+  <string name="list_sort_by_update_time">Według czasu aktualizacji</string>
+  <!-- Zarządzanie szablonami-->
+  <string name="template_usage_hint">Utwórz szablony dla &#x201E;problematycznych&#x201D; aplikacji, kontrolując listę aplikacji, do których mogą uzyskać dostęp.\n\nCzarna lista (zalecane): Aplikacje wybrane w szablonie będą niewidoczne dla aplikacji stosujących szablon.\nBiała lista: Aplikacje niewybrane w szablonie będą niewidoczne dla aplikacji stosujących szablon.</string>
+  <string name="template_new_blacklist">Utwórz szablon czarnej listy</string>
+  <string name="template_new_whitelist">Utwórz szablon białej listy</string>
+  <string name="template_delete">Czy na pewno chcesz usunąć szablon?</string>
+  <string name="template_name">Nazwa szablonu</string>
+  <string name="template_name_invalid">Nazwa nieprawidłowa</string>
+  <string name="template_delete_title">Usuń szablon</string>
+  <string name="template_name_already_exist">Nazwa szablonu już istnieje</string>
+  <string name="template_applied_count">Zastosowano do %d aplikacji</string>
+  <string name="template_apps_visible_count">%d widocznych aplikacji</string>
+  <string name="template_apps_invisible_count">%d niewidocznych aplikacji</string>
+  <!-- Ustawienia aplikacji-->
+  <string name="app_enable_hide">Włącz ukrywanie</string>
+  <string name="app_template_config">Konfiguracja szablonu</string>
+  <string name="app_choose_template">Wybierz szablon</string>
+  <string name="app_exclude_system_apps">Wyklucz aplikacje systemowe</string>
+  <string name="app_exclude_system_apps_summary">Wyłączaj tę opcję tylko wtedy, gdy jest to naprawdę konieczne. Jej wyłączenie może spowodować awarię.</string>
+  <string name="app_template_using">Korzystanie z %d szablonów</string>
+  <string name="app_extra_apps_visible_count">%d dodatkowych widocznych aplikacji</string>
+  <string name="app_extra_apps_invisible_count">%d dodatkowych niewidocznych aplikacji</string>
+  <!-- Ustawienia -->
+  <string name="settings_module">Moduł</string>
+  <string name="settings_data_isolation">Izolacja danych</string>
+  <string name="settings_data_isolation_summary" formatted="false">Dane aplikacji: %s\nStare dane aplikacji: %s\nWymuś montowanie: %s</string>
+  <string name="settings_data_isolation_unsupported">Ta opcja jest dostępna tylko w systemie Android 11 i nowszych</string>
+  <string name="settings_app_data_isolation">Izolacja danych aplikacji</string>
+  <string name="settings_vold_app_data_isolation">Izolacja danych aplikacji Vold</string>
+  <string name="settings_warning">Ostrzeżenie</string>
+  <string name="settings_vold_warning">Umożliwi to włączenie funkcji AOSP, która izoluje zewnętrzny, prywatny katalog pamięci aplikacji. Może to pomóc w ulepszeniu ukrywania aplikacji, ale może powodować problemy ze stabilnością. Funkcja ta może przestać działać w dowolnym momencie, ponieważ została porzucona w AOSP.</string>
+  <string name="settings_change_require_root">Zmiana wymaga uprawnień roota</string>
+  <string name="settings_need_reboot">Zmiana wymaga restartu</string>
+  <string name="settings_permission_denied">Odmowa uprawnień</string>
+  <string name="settings_force_mount_data">Wymuś izolację danych dla wszystkich aplikacji</string>
+  <string name="settings_force_mount_data_summary">Izolacja danych jest domyślnie wyłączona dla aplikacji docelowych API niższych niż 30</string>
+  <string name="settings_ihide_icon">Ukryj ikonę modułu w launcherze</string>
+  <string name="settings_ihide_icon_summary">Nadal możesz otworzyć aplikację w menedżerze Xposed</string>
+  <string name="settings_language">Język</string>
+  <string name="settings_theme">Motyw</string>
+  <string name="settings_system_theme_color">Kolor motywu systemu</string>
+  <string name="settings_theme_color">Kolor motywu</string>
+  <string name="settings_dark_theme">Ciemny motyw</string>
+  <string name="settings_pure_black_dark_theme">Czysty czarny ciemny motyw</string>
+  <string name="settings_pure_black_dark_theme_summary">Jeśli włączony jest ciemny motyw, użyj całkowicie czarnego motywu</string>
+  <string name="settings_service">Usługa</string>
+  <string name="settings_stop_system_service">Zatrzymaj usługę systemową</string>
+  <string name="settings_stop_system_service_summary">Aby ponownie uruchomić usługę, konieczny jest restart</string>
+  <string name="settings_is_clean_env">Wyczyścić środowisko uruchomieniowe jednocześnie?</string>
+  <string name="settings_is_clean_env_summary">Usuń pamięć podręczną usług systemowych w katalogu /data/misc/com.google.hmal.*. Oznacza to, że po kolejnym restarcie należy ręcznie uruchomić aplikację modułu, aby włączyć przechwytywanie, a liczniki przechwytywania również zostaną wyczyszczone.</string>
+  <string name="settings_force_clean_env">Wymuś czyste środowisko wykonawcze (root)</string>
+  <string name="settings_force_clean_env_summary">Tylko w przypadku, gdy usługa systemowa nie uruchomi się, w przeciwnym razie należy kliknąć powyższą opcję.</string>
+  <string name="settings_force_clean_env_toast_successful">Wyczyszczono środowisko wykonawcze</string>
+  <!-- O aplikacji-->
+  <string name="about_description">Chociaż wykrywanie instalacji konkretnych aplikacji jest nieprawidłowe, nie każda aplikacja korzystająca z uprawnień root zapewnia obsługę losowych nazw pakietów. W tym przypadku wykryte aplikacje korzystające z uprawnień root (takie jak fałszywa lokalizacja i izolacja pamięci) są równoznaczne z wykryciem samego uprawnienia root.\n\nJednocześnie niektóre inteligentne aplikacje wykorzystują różne luki w zabezpieczeniach, aby uzyskać listę aplikacji i na ich podstawie stworzyć swoją personę.\n\nTen moduł udostępnia kilka metod sprawdzania, czy lista aplikacji została już poprawnie ukryta. Może on również działać jako moduł Xposed, ukrywając niektóre aplikacje lub odrzucając żądania listy aplikacji w celu ochrony prywatności.</string>
+  <string name="about_how_to_use_title">Jak używać tego modułu</string>
+  <string name="about_how_to_use_description_1">Możesz tworzyć szablony w &#x201E;Zarządzaniu szablonami&#x201D;.\nNastępnie zastosuj szablony do aplikacji w &#x201E;Zarządzaniu aplikacjami&#x201D;. (Możesz również wybrać dodatkowe aplikacje dla celów).\nPowinieneś i tylko powinieneś zaznaczyć &#x201E;System Framework&#x201D; w zakresie modułu Xposed/białej liście.</string>
+  <string name="about_how_to_use_description_2">Zmiany konfiguracji obowiązują w czasie rzeczywistym.</string>
+  <string name="about_open_source">Licencje otwarto źródłowe</string>
+  <!-- Kolory -->
+  <string name="color_sakura">Jasnoróżowy</string>
+  <string name="color_red">Czerwony</string>
+  <string name="color_pink">Różowy</string>
+  <string name="color_purple">Fioletowy</string>
+  <string name="color_deep_purple">Głęboki fioletowy</string>
+  <string name="color_indigo">Indygo</string>
+  <string name="color_blue">Niebieski</string>
+  <string name="color_light_blue">Jasnoniebieski</string>
+  <string name="color_cyan">Cyjankowy</string>
+  <string name="color_teal">Morski</string>
+  <string name="color_green">Zielony</string>
+  <string name="color_light_green">Jasnozielony</string>
+  <string name="color_lime">Limonkowy</string>
+  <string name="color_yellow">Żółty</string>
+  <string name="color_amber">Bursztynowy</string>
+  <string name="color_orange">Pomarańczowy</string>
+  <string name="color_deep_orange">Głęboki pomarańczowy</string>
+  <string name="color_brown">Brązowy</string>
+  <string name="color_blue_grey">Niebiesko szary</string>
+</resources>
