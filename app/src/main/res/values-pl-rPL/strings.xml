@@ -3,9 +3,9 @@
   <string name="app_name">Ukryj Moją Listę Aplikacji</string>
   <string name="title_home">Strona główna</string>
   <string name="title_settings">Ustawienia</string>
-  <string name="title_template_manage">Zarządzanie szablonami</string>
+  <string name="title_template_manage">Zarządzaj szablonami</string>
   <string name="title_template_settings">Ustawienia szablonu</string>
-  <string name="title_app_manage">Zarządzanie aplikacjami</string>
+  <string name="title_app_manage">Zarządzaj aplikacjami</string>
   <string name="title_app_select">Wybierz aplikacje</string>
   <string name="title_app_settings">Ustawienia aplikacji</string>
   <string name="title_about">O aplikacji</string>
@@ -14,8 +14,8 @@
   <string name="config_damaged">Plik konfiguracyjny jest uszkodzony. Wyczyść dane aplikacji.</string>
   <string name="edit_list">Edytuj listę</string>
   <string name="delete">Usuń</string>
-  <string name="enabled">Włączone</string>
-  <string name="disabled">Wyłączone</string>
+  <string name="enabled">Włączona</string>
+  <string name="disabled">Wyłączona</string>
   <string name="work_mode">Tryb pracy</string>
   <string name="blacklist">Czarna lista</string>
   <string name="whitelist">Biała lista</string>
@@ -33,7 +33,7 @@
   <string name="home_xposed_service_on">Usługa systemowa uruchomiona [%d]</string>
   <string name="home_xposed_service_off">Usługa systemowa nie uruchomiona</string>
   <string name="home_xposed_service_old">Moduł zaktualizowany, konieczny restart</string>
-  <string name="home_manage">Zarządzaj</string>
+  <string name="home_manage">Zarządzanie</string>
   <string name="home_backup_and_restore">Kopia zapasowa i przywracanie</string>
   <string name="home_backup_config">Kopia zapasowa konfiguracji</string>
   <string name="home_restore_config">Przywróć konfigurację</string>
@@ -47,10 +47,10 @@
   <!-- Wybierz aplikację-->
   <string name="list_show_system">Pokaż aplikacje systemowe</string>
   <string name="list_sorting">Sortowanie</string>
-  <string name="list_reverse_order">Odwrotna kolejność</string>
+  <string name="list_reverse_order">Odwróć kolejność</string>
   <string name="list_sort_by_label">Według nazwy aplikacji</string>
   <string name="list_sort_by_package_name">Według nazwy pakietu</string>
-  <string name="list_sort_by_install_time">Do czasu instalacji</string>
+  <string name="list_sort_by_install_time">Według czasu instalacji</string>
   <string name="list_sort_by_update_time">Według czasu aktualizacji</string>
   <!-- Zarządzanie szablonami-->
   <string name="template_usage_hint">Utwórz szablony dla &#x201E;problematycznych&#x201D; aplikacji, kontrolując listę aplikacji, do których mogą uzyskać dostęp.\n\nCzarna lista (zalecane): Aplikacje wybrane w szablonie będą niewidoczne dla aplikacji stosujących szablon.\nBiała lista: Aplikacje niewybrane w szablonie będą niewidoczne dla aplikacji stosujących szablon.</string>
@@ -98,12 +98,16 @@
   <string name="settings_pure_black_dark_theme_summary">Jeśli włączony jest ciemny motyw, użyj całkowicie czarnego motywu</string>
   <string name="settings_service">Usługa</string>
   <string name="settings_stop_system_service">Zatrzymaj usługę systemową</string>
-  <string name="settings_stop_system_service_summary">Aby ponownie uruchomić usługę, konieczny jest restart</string>
-  <string name="settings_is_clean_env">Wyczyścić środowisko uruchomieniowe jednocześnie?</string>
+  <string name="settings_stop_system_service_summary">Aby uruchomić usługę ponownie, konieczny jest restart</string>
+  <string name="settings_is_clean_env">Wyczyścić jednocześnie środowisko uruchomieniowe?</string>
   <string name="settings_is_clean_env_summary">Usuń pamięć podręczną usług systemowych w katalogu /data/misc/com.google.hmal.*. Oznacza to, że po kolejnym restarcie należy ręcznie uruchomić aplikację modułu, aby włączyć przechwytywanie, a liczniki przechwytywania również zostaną wyczyszczone.</string>
   <string name="settings_force_clean_env">Wymuś czyste środowisko wykonawcze (root)</string>
   <string name="settings_force_clean_env_summary">Tylko w przypadku, gdy usługa systemowa nie uruchomi się, w przeciwnym razie należy kliknąć powyższą opcję.</string>
   <string name="settings_force_clean_env_toast_successful">Wyczyszczono środowisko wykonawcze</string>
+  <string name="dark_theme">Ciemny motyw</string>
+  <string name="dark_theme_on">Zawsze włączony</string>
+  <string name="dark_theme_off">Zawsze wyłączony</string>
+  <string name="follow_system">Według systemu</string>
   <!-- O aplikacji-->
   <string name="about_description">Chociaż wykrywanie instalacji konkretnych aplikacji jest nieprawidłowe, nie każda aplikacja korzystająca z uprawnień root zapewnia obsługę losowych nazw pakietów. W tym przypadku wykryte aplikacje korzystające z uprawnień root (takie jak fałszywa lokalizacja i izolacja pamięci) są równoznaczne z wykryciem samego uprawnienia root.\n\nJednocześnie niektóre inteligentne aplikacje wykorzystują różne luki w zabezpieczeniach, aby uzyskać listę aplikacji i na ich podstawie stworzyć swoją personę.\n\nTen moduł udostępnia kilka metod sprawdzania, czy lista aplikacji została już poprawnie ukryta. Może on również działać jako moduł Xposed, ukrywając niektóre aplikacje lub odrzucając żądania listy aplikacji w celu ochrony prywatności.</string>
   <string name="about_how_to_use_title">Jak używać tego modułu</string>
