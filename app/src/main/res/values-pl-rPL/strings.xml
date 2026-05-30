@@ -14,8 +14,8 @@
   <string name="config_damaged">Plik konfiguracyjny jest uszkodzony. Wyczyść dane aplikacji.</string>
   <string name="edit_list">Edytuj listę</string>
   <string name="delete">Usuń</string>
-  <string name="enabled">Włączone</string>
-  <string name="disabled">Wyłączone</string>
+  <string name="enabled">Włączona</string>
+  <string name="disabled">Wyłączona</string>
   <string name="work_mode">Tryb pracy</string>
   <string name="blacklist">Czarna lista</string>
   <string name="whitelist">Biała lista</string>
