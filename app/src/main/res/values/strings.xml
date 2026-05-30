@@ -104,6 +104,10 @@
     <string name="settings_force_clean_env">Force clean runtime environment (root)</string>
     <string name="settings_force_clean_env_summary">Only if system service fails to start, otherwise you should click the above option.</string>
     <string name="settings_force_clean_env_toast_successful">Runtime environment cleaned</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="dark_theme_on">Always on</string>
+    <string name="dark_theme_off">Always off</string>
+    <string name="follow_system">Follow system</string>
     <!-- About -->
     <string name="about_description">Although It is incorrect to detect specific app installation, yet not every app using root provides random package name support. In this case, detected apps that use root (such as Fake Location and Storage Isolation) is equal to detected root itself.\n\nAt the same time, some smart apps use various loopholes to acquire your app list, so that it can draw a persona for you.\n\nThis module provides some methods to test whether you have already hidden your applist nicely. Also, it can work as an Xposed module to hide some apps or reject app list requests to protect your privacy.</string>
     <string name="about_how_to_use_title">How to use this module</string>
