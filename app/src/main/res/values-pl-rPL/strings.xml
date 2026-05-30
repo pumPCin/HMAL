@@ -104,6 +104,10 @@
   <string name="settings_force_clean_env">Wymuś czyste środowisko wykonawcze (root)</string>
   <string name="settings_force_clean_env_summary">Tylko w przypadku, gdy usługa systemowa nie uruchomi się, w przeciwnym razie należy kliknąć powyższą opcję.</string>
   <string name="settings_force_clean_env_toast_successful">Wyczyszczono środowisko wykonawcze</string>
+  <string name="dark_theme">Ciemny motyw</string>
+  <string name="dark_theme_on">Zawsze włączony</string>
+  <string name="dark_theme_off">Zawsze wyłączony</string>
+  <string name="follow_system">Według systemu</string>
   <!-- O aplikacji-->
   <string name="about_description">Chociaż wykrywanie instalacji konkretnych aplikacji jest nieprawidłowe, nie każda aplikacja korzystająca z uprawnień root zapewnia obsługę losowych nazw pakietów. W tym przypadku wykryte aplikacje korzystające z uprawnień root (takie jak fałszywa lokalizacja i izolacja pamięci) są równoznaczne z wykryciem samego uprawnienia root.\n\nJednocześnie niektóre inteligentne aplikacje wykorzystują różne luki w zabezpieczeniach, aby uzyskać listę aplikacji i na ich podstawie stworzyć swoją personę.\n\nTen moduł udostępnia kilka metod sprawdzania, czy lista aplikacji została już poprawnie ukryta. Może on również działać jako moduł Xposed, ukrywając niektóre aplikacje lub odrzucając żądania listy aplikacji w celu ochrony prywatności.</string>
   <string name="about_how_to_use_title">Jak używać tego modułu</string>
