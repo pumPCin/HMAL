@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.1"
 hidden-api = "4.4.0"
-kotlin = "2.3.21"
+kotlin = "2.4.0"
 nav = "2.9.8"
 
 [plugins]
