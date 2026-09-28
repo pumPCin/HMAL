@@ -1,8 +1,8 @@
 [versions]
-agp = "9.4.0"
+agp = "9.4.1"
 hidden-api = "4.4.0"
 kotlin = "2.4.20"
-nav = "2.10.1"
+nav = "2.10.2"
 
 [plugins]
 agp-app = { id = "com.android.application", version.ref = "agp" }
@@ -16,7 +16,7 @@ nav-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref 
 refine = { id = "dev.rikka.tools.refine", version = "4.4.0" }
 
 [libraries]
-androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version = "1.10.0" }
+androidx-annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version = "1.11.0" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "nav" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "nav" }
 androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version = "1.2.1" }
