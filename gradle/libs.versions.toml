@@ -7,11 +7,11 @@ nav = "2.10.2"
 [plugins]
 agp-app = { id = "com.android.application", version.ref = "agp" }
 agp-lib = { id = "com.android.library", version.ref = "agp" }
-autoresconfig = { id = "dev.rikka.tools.autoresconfig", version = "1.2.2" }
+autoresconfig = { id = "dev.rikka.tools.autoresconfig", version = "1.3.0" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version = "2.3.13" }
-materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.5.1" }
+materialthemebuilder = { id = "dev.rikka.tools.materialthemebuilder", version = "1.6.0" }
 nav-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav" }
 refine = { id = "dev.rikka.tools.refine", version = "4.4.0" }
 
@@ -33,5 +33,5 @@ dev-rikka-hidden-compat = { module = "dev.rikka.hidden:compat", version.ref = "h
 dev-rikka-hidden-stub = { module = "dev.rikka.hidden:stub", version.ref = "hidden-api" }
 dev-rikka-rikkax-material = { module = "dev.rikka.rikkax.material:material", version = "2.7.2" }
 dev-rikka-rikkax-material-preference = { module = "dev.rikka.rikkax.material:material-preference", version = "2.0.0" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.12.0" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.13.0" }
 me-zhanghai-android-appiconloader = { module = "me.zhanghai.android.appiconloader:appiconloader", version = "1.5.0" }
